@@ -32,11 +32,10 @@ nav ul li a {
     text-decoration: none;
 }
 
-/*.hero {
-    background: url('img/logoquadrada.jpg') no-repeat center center/cover;
+.hero {
     padding: 100px 20px;
     color: white;
-}*/
+}
 
 .btn {
     display: inline-block;
