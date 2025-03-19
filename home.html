@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Posicionados</title>
+    
     <link rel="stylesheet" href="style.css">
+    <!--swiper para o carrosel-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <header>
@@ -37,15 +43,69 @@
     </header>
     
     <section class="hero">
+        <!-- Carrossel acima do texto -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Adicione 10 imagens aqui -->
+                <div class="swiper-slide"><img src="img/foto1.jpg" alt="Foto 1"></div>
+                <div class="swiper-slide"><img src="img/foto2.jpg" alt="Foto 2"></div>
+                <div class="swiper-slide"><img src="img/foto3.jpg" alt="Foto 3"></div>
+                <div class="swiper-slide"><img src="img/foto4.jpg" alt="Foto 4"></div>
+                <div class="swiper-slide"><img src="img/foto5.jpg" alt="Foto 5"></div>
+                <div class="swiper-slide"><img src="img/foto6.jpg" alt="Foto 6"></div>
+                <div class="swiper-slide"><img src="img/foto7.jpg" alt="Foto 7"></div>
+            </div>
+            <!-- botões-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
         <h2>Posicionados</h2>
         <p>Somos o Posicionados, jovens do Ministério Apostólico Reviver, uma geração que escolheu se firmar na Palavra, viver em santidade e fazer a diferença no mundo. Nosso propósito é capacitar jovens para refletirem o amor de Cristo em suas vidas. Nossos encontros são marcados por adoração, estudos bíblicos e eventos que fortalecem nossa fé e comunhão. Se você deseja crescer espiritualmente, construir amizades verdadeiras e fazer parte de uma geração que não se conforma com este mundo, venha para o Posicionados! Juntos, vamos viver o propósito de Deus.
             <br>
             <br>📍 Consulte a nossa agenda de eventos!
             <br>📲 Siga-nos nas redes sociais e fique por dentro da nossa programação!</p>
-    </section>
+    
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Adicione as mesmas 10 imagens ou outras -->
+                <div class="swiper-slide"><img src="img/foto1.jpg" alt="Foto 1"></div>
+                <div class="swiper-slide"><img src="img/foto2.jpg" alt="Foto 2"></div>
+                <div class="swiper-slide"><img src="img/foto3.jpg" alt="Foto 3"></div>
+                <div class="swiper-slide"><img src="img/foto4.jpg" alt="Foto 4"></div>
+                <div class="swiper-slide"><img src="img/foto5.jpg" alt="Foto 5"></div>
+                <div class="swiper-slide"><img src="img/foto6.jpg" alt="Foto 6"></div>
+                <div class="swiper-slide"><img src="img/foto7.jpg" alt="Foto 7"></div>
+            </div>
+            <!-- botões-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        </section>
+        
+        <!-- Swiper -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                loop: true, // Permite que o carrossel seja infinito
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 3000, // Tempo entre slides (em ms)
+                },
+                slidesPerView: 3, // Quantidade de slides visíveis
+                spaceBetween: 20, // Espaço entre os slides
+            });
+        </script>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+       
+        <script src="script.js"></script>
 
 </body>
 
