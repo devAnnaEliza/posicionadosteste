@@ -128,14 +128,29 @@ footer {
     border-radius: 10px;
 }
 
+/* Ajusta o tamanho e posicionamento das setas */
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff; /* Cor dos botões */
-    width: 40px;
-    height: 40px;
+    color: #fff; /* Cor das setas */
+    width: 30px; /* Largura das setas */
+    height: 30px; /* Altura das setas */
+    position: absolute; /* Posiciona as setas sobre as imagens */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento vertical */
+    z-index: 10; /* Garante que as setas fiquem acima das imagens */
 }
 
+/* Ajusta o tamanho do ícone das setas */
 .swiper-button-next::after,
 .swiper-button-prev::after {
     font-size: 20px; /* Tamanho do ícone */
+}
+
+/* Posiciona as setas nas laterais do carrossel */
+.swiper-button-next {
+    right: 10px; /* Distância da borda direita */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Distância da borda esquerda */
 }
