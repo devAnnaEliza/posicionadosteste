@@ -1,0 +1,74 @@
+html, body {
+    height: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('img/bg-desktop.jpg') no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header, footer {
+    background: rgba(51, 51, 51, 0); /* Fundo transparente */
+    color: white;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*.hero {
+    background: url('img/logoquadrada.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+    color: white;
+}*/
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.eventos {
+    padding: 50px 20px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.evento {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.evento img {
+    max-width: 100%;
+    border-radius: 10px;
+}
