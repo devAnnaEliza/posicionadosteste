@@ -109,7 +109,7 @@ p {
     gap: 20px;
 }
 
-/* Estilo individual para cada evento */
+/*estilização de cada evento*/
 .evento {
     background: #fff;
     border: 1px solid #ddd;
@@ -137,7 +137,7 @@ p {
     color: #666;
 }
 
-/* Adiciona um hover para destacar os eventos */
+/*animação para destacar os eventos*/
 .evento:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
