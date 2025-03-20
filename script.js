@@ -20,3 +20,13 @@ const swiper = new Swiper('.swiper-container', {
         },
     },
 });
+
+// Mostrar o botão "Voltar ao Topo" ao rolar
+window.addEventListener('scroll', () => {
+    const backToTop = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
