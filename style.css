@@ -88,54 +88,29 @@ p {
     gap: 20px;
 }
 
-.evento {
-    background: #fff;
-    border: 1px solid #ddd;
-    color: #000;
-    border-radius: 15px;
-    padding: 15px;
-    max-width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.evento img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.eventos ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-.eventos ul li {
-    margin: 10px 0;
-    font-size: 18px;
-    color: white;
-}
-
-.proximos-eventos {
+/* Estilo geral para a seção de eventos */
+.eventos, .proximos-eventos {
     padding: 50px 20px;
-    background: transparent; 
     text-align: center;
     color: #333;
 }
 
-.proximos-eventos h2 {
+.eventos h2, .proximos-eventos h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: white;
+    color: #fff;
 }
 
-.galeria-eventos {
+/* Galeria de eventos (anteriores e futuros) */
+.galeria, .galeria-eventos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.galeria-eventos .evento {
+/* Estilo individual para cada evento */
+.evento {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -145,21 +120,28 @@ p {
     text-align: center;
 }
 
-.galeria-eventos .evento img {
+.evento img {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.galeria-eventos .evento h3 {
+.evento h3 {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
 }
 
-.galeria-eventos .evento p {
+.evento p {
     font-size: 16px;
     color: #666;
+}
+
+/* Adiciona um hover para destacar os eventos */
+.evento:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .produtos {
