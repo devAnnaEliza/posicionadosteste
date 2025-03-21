@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Posicionados</title>
     
     <link rel="stylesheet" href="style.css">
-    <!--swiper para o carrosel-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--swiper pro carrosel-->
 </head>
+
 <body>
     <header>
-
         <h1>Posicionados</h1>
         <h5>Ministério Jovem Reviver</h5>
         <nav>
@@ -25,7 +22,6 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-
     </header>
     
     <section class="hero">
@@ -58,32 +54,29 @@
                 <div class="swiper-slide"><img src="img/foto7.jpg" alt="Foto 7"></div>
             </div>
         </div>
+    </section>
         
-        </section>
-        
-        <!-- Swiper -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper-container', {
-                loop: true, // Permite que o carrossel seja infinito
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                autoplay: {
-                    delay: 3000, // Tempo entre slides (em ms)
-                },
-                slidesPerView: 3, // Quantidade de slides visíveis
-                spaceBetween: 20, // Espaço entre os slides
-            });
-        </script>
+    <!--swiper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, 
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 3000,
+            },
+            slidesPerView: 3,
+            spaceBetween: 20, 
+        });
+    </script>
 
-        <!-- Ionicons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-       
-        <script src="script.js"></script>
+    <!--importação do ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
