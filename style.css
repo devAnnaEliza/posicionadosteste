@@ -5,8 +5,8 @@ html, body {
 }
 
 body {
-    background: url('img/bg-desktop.jpg') no-repeat center center fixed; /* Centraliza e fixa a imagem */
-    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background: url('img/bg-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -88,7 +88,6 @@ p {
     gap: 20px;
 }
 
-/* Estilo geral para a seção de eventos */
 .eventos, .proximos-eventos {
     padding: 50px 20px;
     text-align: center;
@@ -101,7 +100,6 @@ p {
     color: #fff;
 }
 
-/* Galeria de eventos (anteriores e futuros) */
 .galeria, .galeria-eventos {
     display: flex;
     justify-content: center;
@@ -154,7 +152,7 @@ p {
 }
 
 /*padronização do ionicons*/
-#social-links a {
+footer #social-links a {
     color: white;
     font-size: 24px;
     margin: 0 10px;
@@ -162,21 +160,14 @@ p {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#social-links a:hover {
-    color: #25D366; 
-    transform: scale(1.2); 
-}
-
-/* Ajuste para o rodapé */
-footer #social-links a {
-    font-size: 24px; /* Ícones maiores no rodapé */
-    color: #fff; /* Cor padrão no rodapé */
-}
-
 footer #social-links a:hover {
-    color: #FF4500; /* Cor ao passar o mouse no rodapé (exemplo: laranja) */
-    transform: rotate(360deg) scale(1.3); /* Gira e aumenta o ícone */
-    transition: transform 0.5s ease, color 0.3s ease; /* Animação mais longa */
+    color: #ab2fff; 
+    transform: rotate(360deg) scale(1.3);
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+#social-links a:hover {
+    animation: pulse 0.6s infinite;
 }
 
 footer {    
@@ -189,27 +180,24 @@ footer {
     color: white; 
 }
 
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    display: none; /* Mostra apenas quando o usuário rolar */
-    z-index: 1000;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-.back-to-top:hover {
-    background: #555;
-}
+
 
 .swiper-container {
     width: 100%;
-    height: 200px; /* Reduz a altura do carrossel */
-    margin: 10px 0; /* Reduz o espaçamento externo */
+    height: 200px;
+    margin: 10px 0;
 }
 
 .swiper-slide img {
@@ -225,7 +213,7 @@ footer {
     }
 
     .swiper-container {
-        height: 150px; /* Ajusta a altura do carrossel em telas menores */
+        height: 150px; 
     }
 
     nav ul li {
@@ -233,10 +221,9 @@ footer {
     }
 }
 
-/* Estilo para a seção de contato */
 .contato {
     padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.9); /* Fundo claro */
+    background: rgba(255, 255, 255, 0.9); 
     max-width: 600px;
     margin: 20px auto;
     border-radius: 10px;
@@ -250,11 +237,11 @@ footer {
     color: #333;
 }
 
-/* Estilo para os grupos de formulário */
+
 .form-group {
     margin-bottom: 15px;
     display: flex;
-    flex-direction: column; /* Garante alinhamento vertical */
+    flex-direction: column; 
 }
 
 .form-group label {
@@ -268,14 +255,13 @@ footer {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Garante que padding não afete o tamanho */
+    box-sizing: border-box; 
 }
 
-/* Botão de envio */
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background: #25D366; /* Cor do botão */
+    background: #25D366; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -284,10 +270,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #1DA851; /* Cor ao passar o mouse */
+    background: #1DA851;
 }
 
-/* Responsividade para a página de contato */
 @media (max-width: 768px) {
     .contato {
         padding: 30px 15px;
