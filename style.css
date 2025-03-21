@@ -153,13 +153,30 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#social-links {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-    padding: 15px 0;
-  
-    font-size: 22px;
+/*padronização do ionicons*/
+#social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none; 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social-links a:hover {
+    color: #25D366; 
+    transform: scale(1.2); 
+}
+
+/* Ajuste para o rodapé */
+footer #social-links a {
+    font-size: 24px; /* Ícones maiores no rodapé */
+    color: #fff; /* Cor padrão no rodapé */
+}
+
+footer #social-links a:hover {
+    color: #FF4500; /* Cor ao passar o mouse no rodapé (exemplo: laranja) */
+    transform: rotate(360deg) scale(1.3); /* Gira e aumenta o ícone */
+    transition: transform 0.5s ease, color 0.3s ease; /* Animação mais longa */
 }
 
 footer {    
