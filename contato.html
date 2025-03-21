@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Posicionados</h1>
+        <h5>Ministério Jovem Reviver</h5>
+        <nav>
+            <ul>
+                <li><a href="index.html">O Ministério</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="social-links">
+            <a href="index.html">
+              <ion-icon name="people-outline"></ion-icon></ion-icon>
+            </a>
+            <a href="eventos.html">
+                <ion-icon name="camera-outline"></ion-icon>
+            </a>
+            
+            <a href="loja.html">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+            </a>
+            <a href="contato.html">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+            </a>
+          </div>
+    </header>
+
+    <section class="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome *</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="celular">Celular *</label>
+                <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro *</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Seu Bairro" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade *</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua Cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado *</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione seu Estado</option>
+                    <option value="SP">AC</option>
+                    <option value="RJ">AL</option>
+                    <option value="MG">AP</option>
+                    <option value="BA">AM</option>
+                    <option value="MG">BA</option>
+                    <option value="BA">CE</option>
+                    <option value="MG">DF</option>
+                    <option value="BA">ES</option>
+                    <option value="MG">GO</option>
+                    <option value="BA">MA</option>
+                    <option value="MG">MT</option>
+                    <option value="BA">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="BA">PA</option>
+                    <option value="MG">PB</option>
+                    <option value="BA">PR</option>
+                    <option value="MG">PE</option>
+                    <option value="BA">PI</option>
+                    <option value="MG">RJ</option>
+                    <option value="BA">RN</option>
+                    <option value="MG">RS</option>
+                    <option value="BA">RO</option>
+                    <option value="MG">RR</option>
+                    <option value="BA">SC</option>
+                    <option value="MG">SE</option>
+                    <option value="BA">SP</option>
+                    <option value="MG">TO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="igreja">Igreja</label>
+                <input type="text" id="igreja" name="igreja" placeholder="Sua Igreja (opcional)">
+            </div>
+            <div class="form-group">
+                <label for="instagram">Instagram</label>
+                <input type="text" id="instagram" name="instagram" placeholder="@seuusuario (opcional)">
+            </div>
+            <div class="form-group">
+                <label for="facebook">Facebook</label>
+                <input type="text" id="facebook" name="facebook" placeholder="Seu Facebook (opcional)">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div id="social-links">
+        <a href="https://www.instagram.com/reviverjovens/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+    </div>
+
+    <a href="#top" class="back-to-top">⬆</a>
+</footer>
+
+</html>

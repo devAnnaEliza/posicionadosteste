@@ -215,3 +215,72 @@ footer {
         margin: 0 5px;
     }
 }
+
+/* Estilo para a seção de contato */
+.contato {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo claro */
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para os grupos de formulário */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Garante alinhamento vertical */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que padding não afete o tamanho */
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #25D366; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #1DA851; /* Cor ao passar o mouse */
+}
+
+/* Responsividade para a página de contato */
+@media (max-width: 768px) {
+    .contato {
+        padding: 30px 15px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}

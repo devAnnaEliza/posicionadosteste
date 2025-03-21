@@ -30,3 +30,23 @@ window.addEventListener('scroll', () => {
         backToTop.style.display = 'none';
     }
 });
+
+document.getElementById('form-contato').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita o envio do formulário
+
+    // Validação básica
+    const nome = document.getElementById('nome').value.trim();
+    const celular = document.getElementById('celular').value.trim();
+    const bairro = document.getElementById('bairro').value.trim();
+    const cidade = document.getElementById('cidade').value.trim();
+    const estado = document.getElementById('estado').value;
+
+    if (!nome || !celular || !bairro || !cidade || !estado) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+    }
+
+    // Exibe mensagem de sucesso
+    alert('Formulário enviado com sucesso!');
+    document.getElementById('form-contato').reset(); // Limpa o formulário
+});
