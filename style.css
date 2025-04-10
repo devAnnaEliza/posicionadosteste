@@ -23,6 +23,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -55,6 +57,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 nav ul {
@@ -65,12 +68,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
-}
-
-header nav ul li {
-    margin: 0 15px; 
 }
 
 nav ul li a {
