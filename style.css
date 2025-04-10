@@ -8,25 +8,31 @@ html, body {
 }
 
 body {
-    background: url('img/telainicialclean.png') no-repeat;
+    background: url('img/telainicialclean.png') no-repeat center top;
     background-size: cover;
     font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    color: #fff;
     text-align: center;
 }
 
 header {
-    background: rgba(51, 51, 51, 0); 
+    background: #171714; 
     color: white;
-    padding: 20px;
-    position: relative;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
 }
 
 header h1 {
-    font-size: 48px;
-    margin: 5px 0; 
+    font-size: 30px;
+    margin: 0; 
     padding: 0;
     display: inline-block;
     white-space: nowrap;
@@ -35,24 +41,26 @@ header h1 {
 
 .fonte1 {
     font-family: 'Montserrat', Arial, sans-serif; 
-    color: #171714;
-    font-size: 24px;
+    color: #fff;
 }
 
 .fonte2 {
-    font-family: 'Playfair Display', Italic; 
-    color: #171714;
-    font-size: 24px;
+    font-family: 'Playfair Display', serif; 
+    color: #fff;
     font-style: italic;
     font-weight: 800;
 }
 
-header nav ul li {
-    margin: 0 10px; 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
@@ -61,30 +69,37 @@ nav ul li {
     margin: 0 15px;
 }
 
+header nav ul li {
+    margin: 0 15px; 
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f3caa8; /* Destaque ao passar o mouse */
 }
 
 .hero {
-    padding: 50px 10px; 
-    margin: 10px; 
+    padding: 100px 20px; /*coreção do cabeçalho*/
     color: white;
     text-align: center;
-    justify-content: center;
 }
 
-p {
-    padding: 15px;
-    display: flex;
-    margin: 10px auto;
-    text-align: center;
-    max-width: 600px;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
     font-size: 16px;
-}
-
-.btn, .back-to-top, #social-links a {
-    transition: all 0.3s ease;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 .btn {
@@ -95,6 +110,11 @@ p {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #555;
 }
 
 .eventos {
@@ -172,6 +192,16 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+footer {    
+    background: transparent; 
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: .4s;
+    border: none; 
+    color: white; 
+}
+
 /*padronização do ionicons*/
 footer #social-links a {
     color: white;
@@ -191,16 +221,6 @@ footer #social-links a:hover {
     animation: pulse 0.6s infinite;
 }
 
-footer {    
-    background: transparent; 
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    transition: .4s;
-    border: none; 
-    color: white; 
-}
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -213,28 +233,9 @@ footer {
     }
 }
 
-
-
-.swiper-container {
-    width: 100%;
-    height: 200px;
-    margin: 10px 0;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 5px; 
-}
-
 @media (max-width: 768px) {
     .hero {
-        padding: 20px;
-    }
-
-    .swiper-container {
-        height: 150px; 
+        padding: 80px 15px;
     }
 
     nav ul li {
