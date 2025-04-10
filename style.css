@@ -29,6 +29,16 @@ header h1 {
     margin: 5px 0; 
 }
 
+.fonte1 {
+    font-family: 'Montserrat', Arial, sans-serif; /* Fonte para a primeira metade */
+    color: #333; /* Cor opcional */
+}
+
+.fonte2 {
+    font-family: 'Playfair Display', serif; /* Fonte para a segunda metade */
+    color: #555; /* Cor opcional */
+}
+
 header nav ul li {
     margin: 0 10px; 
 }
