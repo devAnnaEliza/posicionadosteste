@@ -1,13 +1,14 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
 
 html, body {
+    overflow-x: hidden;
     height: 100%; 
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: url('./img/telainicial.png') no-repeat fixed;
+    background: url('./img/telainicial.png') no-repeat ;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
