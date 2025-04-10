@@ -42,9 +42,9 @@ header h1 {
 .fonte2 {
     font-family: 'Playfair Display', Italic; 
     color: #171714;
-    font-size: 28px;
+    font-size: 24px;
     font-style: italic;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 header nav ul li {
