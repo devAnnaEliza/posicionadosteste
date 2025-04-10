@@ -30,13 +30,13 @@ header h1 {
 }
 
 .fonte1 {
-    font-family: 'Montserrat', Arial, sans-serif; /* Fonte para a primeira metade */
-    color: #333; /* Cor opcional */
+    font-family: 'Montserrat', Arial, sans-serif; 
+    color: #333;
 }
 
 .fonte2 {
-    font-family: 'Playfair Display', serif; /* Fonte para a segunda metade */
-    color: #555; /* Cor opcional */
+    font-family: 'Playfair Display', serif; 
+    color: #555; /
 }
 
 header nav ul li {
