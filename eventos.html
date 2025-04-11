@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--swiper pro carrosel-->
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!--swiper pro carrosel-->
 </head>
 
 <body>
@@ -45,17 +47,46 @@
     <section class="eventos">
         <h2>Nossos Eventos</h2>
         <div class="galeria">
+            <!-- Evento com carrossel -->
             <div class="evento">
-                <img src="img/fotos/oracao03.jpg" alt="Foto do evento">
-                <h3>Oração de Sábado</h3>
+                <div class="swiper-container" id="carrossel-evento-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/fotos/oracao02.jpg" alt="Foto do evento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fotos/oracao01.jpg" alt="Foto do evento">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação exclusivos -->
+                    <div class="swiper-button-next swiper-button-next-1"></div>
+                    <div class="swiper-button-prev swiper-button-prev-1"></div>
+                </div>
+                <h3>Orações de Sábado</h3>
             </div>
+    
+            <!-- Outro evento com carrossel -->
             <div class="evento">
-                <img src="img/fotos/inflow02.jpg" alt="Foto do evento">
-                <h3>Posicionados In Flow 1.0</h3>
-            </div>
-            <div class="evento">
-                <img src="img/fotos/oracao01.jpg" alt="Foto do evento">
-                <h3>Oração de Sábado</h3>
+                <div class="swiper-container" id="carrossel-evento-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/fotos/inflow01.jpg" alt="Foto do evento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fotos/inflow02.jpg" alt="Foto do evento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fotos/inflow04.jpg" alt="Foto do evento">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fotos/inflow05.jpg" alt="Foto do evento">
+                        </div>
+                    </div>
+                    <!-- Botões de navegação exclusivos -->
+                    <div class="swiper-button-next swiper-button-next-2"></div>
+                    <div class="swiper-button-prev swiper-button-prev-2"></div>
+                </div>
+                <h3>In Flow 1.0</h3>
             </div>
         </div>
     </section>

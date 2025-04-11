@@ -1,21 +1,31 @@
-const swiper = new Swiper('.swiper-container', {
+new Swiper('#carrossel-evento-1', {
     loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next-1',
+        prevEl: '.swiper-button-prev-1',
+    },
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
-    slidesPerView: 5,
-    spaceBetween: 20,
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        480: {
-            slidesPerView: 1,
-        },
-    },
+    slidesPerView: 1, // Mostra apenas um slide por vez
+    spaceBetween: 10, // Espaçamento entre os slides
 });
 
+// Inicializa o carrossel do segundo evento
+new Swiper('#carrossel-evento-2', {
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next-2',
+        prevEl: '.swiper-button-prev-2',
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+});
 document.getElementById('form-contato').addEventListener('submit', function (event) {
     event.preventDefault();
 
