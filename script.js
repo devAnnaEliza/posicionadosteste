@@ -1,3 +1,4 @@
+// primeiro carrossel
 new Swiper('#carrossel-evento-1', {
     loop: true,
     navigation: {
@@ -8,7 +9,7 @@ new Swiper('#carrossel-evento-1', {
     spaceBetween: 10,
 });
 
-// Inicializa o carrossel do segundo evento
+// segundo carrossel
 new Swiper('#carrossel-evento-2', {
     loop: true,
     navigation: {
@@ -22,6 +23,7 @@ new Swiper('#carrossel-evento-2', {
     slidesPerView: 1,
     spaceBetween: 10,
 });
+
 document.getElementById('form-contato').addEventListener('submit', function (event) {
     event.preventDefault();
 
