@@ -381,15 +381,22 @@ button[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, background 0.3s ease;
 }
 
+.swiper-container:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-prev {
+    opacity: 1;
+    pointer-events: auto;
+}
 .swiper-button-next::after, 
 .swiper-button-prev::after {
     font-size: 10px;
     font-weight: bold;
 }
-.swiper-button-next:hover, 
-.swiper-button-prev:hover {
+.swiper-button-next:hover .swiper-button-next, 
+.swiper-button-prev:hover .swiper-button-prev{
     transform: scale(1.1);
 }
