@@ -1,5 +1,7 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
 
+/*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege - #f3caa8 */
+
 html, body {
     overflow-x: hidden;
     height: 100%; 
@@ -16,8 +18,8 @@ body {
 }
 
 header {
-    background: #171714; 
-    color: white;
+    background: #3f1710; 
+    color: #f3caa8;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -61,7 +63,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 0;
-    background: #171714;
+    background: #3f1710;
     border-radius: 10px;
     padding: 10px;
     z-index: 1000;
@@ -103,7 +105,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #f3caa8;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -111,7 +113,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f3caa8; 
+    color: white; 
 }
 
 .hero {
@@ -164,12 +166,16 @@ nav ul li a:hover {
     padding: 50px 20px;
     text-align: center;
     color: #333;
+    
 }
 
 .eventos h2, .proximos-eventos h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #171714;
+    font-family: 'Playfair Display', serif; 
+    font-style: italic;
+    font-weight: 800;
 }
 
 .galeria, .galeria-eventos {
@@ -200,6 +206,7 @@ nav ul li a:hover {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
+    font-family: 'Montserrat', Arial, sans-serif; 
 }
 
 .evento p {
