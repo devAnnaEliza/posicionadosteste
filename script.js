@@ -4,12 +4,8 @@ new Swiper('#carrossel-evento-1', {
         nextEl: '.swiper-button-next-1',
         prevEl: '.swiper-button-prev-1',
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    slidesPerView: 1, // Mostra apenas um slide por vez
-    spaceBetween: 10, // Espaçamento entre os slides
+    slidesPerView: 1,
+    spaceBetween: 10,
 });
 
 // Inicializa o carrossel do segundo evento

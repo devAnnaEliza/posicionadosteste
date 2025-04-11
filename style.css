@@ -287,7 +287,7 @@ footer #social-links a:hover {
     }
 }
 
-.contato {
+/*.contato {
     padding: 50px 20px;
     background: rgba(255, 255, 255, 0.9); 
     max-width: 600px;
@@ -337,7 +337,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background: #1DA851;
-}
+}*/
 
 @media (max-width: 768px) {
     .contato {
@@ -369,5 +369,24 @@ button[type="submit"]:hover {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #fff;
+    background: white;
+    color: #171714;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    font-size: 10px;
+    font-weight: bold;
+}
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    transform: scale(1.1);
 }
