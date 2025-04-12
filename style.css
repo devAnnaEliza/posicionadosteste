@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top fixed;
+    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
     /*background-size: cover;*/
     background-color: #ffe1bf;
     font-family: 'Montserrat', Arial, sans-serif;
