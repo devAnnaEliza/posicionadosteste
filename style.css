@@ -3,10 +3,15 @@
 /*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
 
 html, body {
-    overflow-x: hidden;
+    overflow-y: scroll;
     height: 100%; 
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -18,6 +23,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    overflow: auto;
+    overflow-y: scroll;
 }
 
 header {
@@ -78,7 +85,7 @@ header h1 {
     align-items: center;
     width: 30px;
     height: 40px;
-    color: white;
+    color: #f3caa8;
     text-decoration: none;
     font-size: 24px;
     transition: background 0.3s, transform 0.3s;
@@ -86,6 +93,7 @@ header h1 {
 
 .barra-lateral .icone:hover {
     transform: scale(1.1);
+    color: white;
 }
 
 /*                                  estilização do index.html                                            */
@@ -154,8 +162,7 @@ nav ul li a:hover {
 
 /*                                      estilização do eventos.html                                       */
 .eventos {
-    padding: 50px 20px;
-    color: #fff;
+    margin-top: 70px;
 }
 
 .galeria {
@@ -165,12 +172,17 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.eventos, .proximos-eventos {
+.proximos-eventos {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/*.eventos, .proximos-eventos {
     padding: 50px 20px;
     text-align: center;
     color: #333;
     
-}
+}*/
 
 .eventos h2, .proximos-eventos h2 {
     font-size: 28px;
