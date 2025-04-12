@@ -85,7 +85,7 @@ header h1 {
     align-items: center;
     width: 30px;
     height: 40px;
-    color: #f3caa8;
+    color: white;
     text-decoration: none;
     font-size: 24px;
     transition: background 0.3s, transform 0.3s;
@@ -93,7 +93,7 @@ header h1 {
 
 .barra-lateral .icone:hover {
     transform: scale(1.1);
-    color: white;
+    color: #f3caa8;
 }
 
 /*                                  estilização do index.html                                            */
@@ -116,7 +116,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f3caa8;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
@@ -124,7 +125,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white; 
+    color: #f3caa8; 
 }
 
 .hero {
@@ -188,9 +189,8 @@ nav ul li a:hover {
     font-size: 28px;
     margin-bottom: 20px;
     color: #171714;
-    font-family: 'Playfair Display', serif; 
-    font-style: italic;
-    font-weight: 800;
+    font-family: 'Playfair Display'; 
+    font-weight: 600;
 }
 
 .galeria, .galeria-eventos {
