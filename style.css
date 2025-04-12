@@ -261,6 +261,7 @@ footer {
     color: white; 
 }
 
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -335,20 +336,6 @@ button[type="submit"]:hover {
     background: #1DA851;
 }*/
 
-@media (max-width: 768px) {
-    .contato {
-        padding: 30px 15px;
-    }
-
-    .form-group input, .form-group select {
-        font-size: 14px;
-    }
-
-    button[type="submit"] {
-        font-size: 14px;
-    }
-}
-
 .swiper-container {
     position: relative;
     width: 300px;
@@ -404,4 +391,56 @@ button[type="submit"]:hover {
 .swiper-button-next:hover .swiper-button-next, 
 .swiper-button-prev:hover .swiper-button-prev{
     transform: scale(1.1);
+}
+
+
+/*                                         estilização da página galeria.html                                      */
+
+.pagina-galeria .galeria-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffe1bf; /* Cor de fundo */
+    color: #171714; /* Cor do texto */
+}
+
+.pagina-galeria .galeria-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3f1710;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilo da galeria com layout estilo "masonry" */
+.pagina-galeria .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automaticamente as colunas */
+    grid-auto-flow: dense; /* Preenche os espaços vazios de forma eficiente */
+    justify-items: center; /* Centraliza as imagens */
+}
+
+/* Estilo das imagens */
+.pagina-galeria .galeria img {
+    display: block;
+    width: auto; /* Mantém a largura original */
+    height: auto; /* Mantém a altura original */
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.pagina-galeria .galeria img:hover {
+    transform: scale(1.20); /* Aumenta levemente a imagem */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+}
+
+@media (max-width: 768px) {
+    .pagina-galeria .galeria-container h2 {
+        font-size: 20px;
+    }
+
+    .pagina-galeria .galeria {
+        gap: 10px;
+    }
 }
