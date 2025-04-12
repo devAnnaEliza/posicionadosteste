@@ -1,6 +1,6 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
 
-/*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege - #f3caa8 */
+/*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
 
 html, body {
     overflow-x: hidden;
@@ -10,9 +10,9 @@ html, body {
 }
 
 body {
-    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
+    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top fixed;
     /*background-size: cover;*/
-    background-color: #f3caa8;
+    background-color: #ffe1bf;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
     text-align: center;
