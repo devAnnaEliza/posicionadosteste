@@ -40,11 +40,19 @@
             <img src="img/fotos/oracao02.jpg" alt="Foto 8">
             <img src="img/fotos/culto2017_01.jpg" alt="Foto 9">
             <img src="img/fotos/culto2017_02.jpg" alt="Foto 10">
-            <img src="img/fotos/culto2017_03.jpg" alt="">
+            <img src="img/fotos/culto2017_03.jpg" alt="Foto 11">
         </div>
     </main>
 
-    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll(".pagina-galeria .galeria img");
+            images.forEach((img) => {
+                img.style.setProperty("--image-height", img.naturalHeight);
+                img.style.gridRow = `span ${Math.ceil(img.naturalHeight / 10)}`;
+            });
+        });
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

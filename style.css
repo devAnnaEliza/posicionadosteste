@@ -396,11 +396,12 @@ button[type="submit"]:hover {
 
 /*                                         estilização da página galeria.html                                      */
 
+/*
 .pagina-galeria .galeria-container {
     padding: 20px;
     text-align: center;
-    background-color: #ffe1bf; /* Cor de fundo */
-    color: #171714; /* Cor do texto */
+    background-color: #ffe1bf;
+    color: #171714;
 }
 
 .pagina-galeria .galeria-container h2 {
@@ -410,29 +411,26 @@ button[type="submit"]:hover {
     font-family: 'Playfair Display', serif;
 }
 
-/* Estilo da galeria com layout estilo "masonry" */
 .pagina-galeria .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta automaticamente as colunas */
-    grid-auto-flow: dense; /* Preenche os espaços vazios de forma eficiente */
-    justify-items: center; /* Centraliza as imagens */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: auto; 
+    gap: 10px;
+    align-items: stretch;
 }
 
-/* Estilo das imagens */
 .pagina-galeria .galeria img {
     display: block;
-    width: auto; /* Mantém a largura original */
-    height: auto; /* Mantém a altura original */
-    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação ao passar o mouse */
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito ao passar o mouse */
 .pagina-galeria .galeria img:hover {
-    transform: scale(1.20); /* Aumenta levemente a imagem */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
 @media (max-width: 768px) {
@@ -441,6 +439,7 @@ button[type="submit"]:hover {
     }
 
     .pagina-galeria .galeria {
-        gap: 10px;
+        gap: 8px; 
     }
-}
+} */
+

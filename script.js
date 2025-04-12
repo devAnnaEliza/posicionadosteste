@@ -41,3 +41,4 @@ document.getElementById('form-contato').addEventListener('submit', function (eve
     alert('Formulário enviado com sucesso!');
     document.getElementById('form-contato').reset();
 });
+
