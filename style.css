@@ -79,23 +79,21 @@ header h1 {
     z-index: 1000;
 }
 
-.barra-lateral .icone ion-icon {
+.barra-lateral .icone {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25px;
     height: 40px;
-    color: white !important;
-    fill: white !important;
+    color: white;
     text-decoration: none;
     font-size: 24px;
     transition: background 0.3s, transform 0.3s;
 }
 
-.barra-lateral .icone:hover ion-icon {
+.barra-lateral .icone:hover {
     transform: scale(1.1);
-    color: #f3caa8 !important;
-    fill: #f3caa8 !important;
+    color: #f3caa8;
 }
 
 /*                                  estilização do index.html                                            */
