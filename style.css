@@ -132,7 +132,7 @@ nav ul li a:hover {
     position: relative;
     width: 100%;
     min-height: 60vh;
-    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center center/cover;
+    /*background: url('img/mat_idvisual/telainicialclean.png') no-repeat center center/cover;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +183,6 @@ nav ul li a:hover {
 .btn-cta:hover {
     background: #3f1710;
     color: #ffe1bf;
-}
 }
 /*                                      estilização do index.html                                         */
 
