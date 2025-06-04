@@ -128,35 +128,62 @@ nav ul li a:hover {
     color: #f3caa8; 
 }
 
-.hero {
-    padding: 100px 20px;
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #fff;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(63, 23, 16, 0.5); /* overlay vinho */
+    z-index: 1;
 }
 
-.hero p {
-    font-size: 16px;
-    margin: 0 auto;
+.hero-content {
+    position: relative;
+    z-index: 2;
     max-width: 600px;
+    margin: 0 auto;
 }
 
-.btn {
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.btn-cta {
     display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
+    padding: 12px 32px;
+    background: #f3caa8;
+    color: #3f1710;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
-.btn:hover {
-    background: #555;
+.btn-cta:hover {
+    background: #3f1710;
+    color: #ffe1bf;
+}
 }
 /*                                      estilização do index.html                                         */
 
