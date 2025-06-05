@@ -469,16 +469,62 @@ button[type="submit"]:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
+/*                                              media queries                                           */
 @media (max-width: 768px) {
-    .pagina-galeria .galeria-container h2 {
-        font-size: 20px;
+    .top-bar nav {
+        flex-direction: column;
+        align-items: flex-start;
     }
+    .top-menu {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .top-menu li {
+        margin: 10px 0;
+    }
+    .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+}
 
-    .pagina-galeria .galeria {
-        gap: 8px; 
+@media (max-width: 768px) {
+    .hero-banner {
+        min-height: 40vh;
+        padding: 30px 10px;
     }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
 
-    .pagina-galeria .galeria img {
-        height: 150px;
+@media (max-width: 600px) {
+    .barra-lateral {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        flex-direction: row;
+        padding: 5px 10px;
+        border-radius: 30px;
     }
-} 
+    .barra-lateral .icone {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px;
+    }
+    .hero-content {
+        padding: 10px;
+    }
+}
