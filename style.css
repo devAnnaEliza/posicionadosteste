@@ -65,6 +65,12 @@ header h1 {
     font-weight: 800;
 }
 
+.top-menu a.active {
+    color: #f3caa8;
+    font-weight: bold;
+    border-bottom: 2px solid #f3caa8;
+}
+
 .barra-lateral {
     position: fixed;
     top: 50%;
