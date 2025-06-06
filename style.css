@@ -67,9 +67,13 @@ header h1 {
 }
 
 .top-menu a.active {
-    color: #f3caa8;
+    background: #f3caa8;
+    color: #3f1710;
     font-weight: bold;
-    border-bottom: 2px solid #f3caa8;
+    border-radius: 12px;
+    padding: 6px 18px;
+    border: none;
+    transition: background 0.3s, color 0.3s;
 }
 
 .barra-lateral {
