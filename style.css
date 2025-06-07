@@ -34,10 +34,7 @@ body {
     background: linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)); /* overlay vinho */
     background-size: cover;
 }
-body > *:not(.global-hero-bg) {
-    position: relative;
-    z-index: 1;
-}
+
 .barra-lateral {
     position: fixed;
     top: 50%;
