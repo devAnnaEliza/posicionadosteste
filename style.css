@@ -59,8 +59,8 @@ body > *:not(.global-hero-bg) {
 
 .barra-lateral .icone,
 .barra-lateral .icone ion-icon {
-    color: #fff !important;
-    fill: #fff !important;
+    color: #fff;
+    fill: #fff;
     font-size: 28px;
     margin: 8px 0;
     transition: color 0.3s;
