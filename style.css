@@ -2,39 +2,43 @@
 
 /*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
 
+:root {
+    --vinho: #3f1710;
+    --marrom-escuro: #171714;
+    --bege-escuro: #f3caa8;
+    --bege-claro: #ffe1bf;
+}
+
 html, body {
-    overflow-y: scroll;
-    height: 100%; 
+    height: 100%;
     margin: 0;
     padding: 0;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
-    /*background-size: cover;*/
-    background-color: #ffe1bf;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+    background: var(--bege-claro);
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
+html::-webkit-scrollbar { display: none; }
+body { text-align: center; }
+
+/* =================== OVERLAY E FUNDO GLOBAL =================== */
 .global-hero-bg {
     position: fixed;
     inset: 0;
-    background: linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)); /* overlay vinho */
+    width: 100vw;
+    height: 100vh;
+    background:
+        linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)),
+        url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
     background-size: cover;
+    z-index: 0;
+    pointer-events: none;
 }
 
+
+/* =================== BARRA LATERAL =================== */
 .barra-lateral {
     position: fixed;
     top: 50%;
@@ -44,7 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #3f1710;
+    background: var(--vinho);
     border-radius: 10px;
     padding: 10px;
     z-index: 1000 !important;
@@ -53,11 +57,10 @@ body {
     min-width: 0;
     max-width: none;
 }
-
 .barra-lateral .icone,
 .barra-lateral .icone ion-icon {
-    color: #fff;
-    fill: #fff;
+    color: #fff !important;
+    fill: #fff !important;
     font-size: 28px;
     margin: 8px 0;
     transition: color 0.3s;
@@ -65,55 +68,45 @@ body {
     align-items: center;
     justify-content: center;
 }
+.barra-lateral .icone:hover ion-icon {
+    color: var(--bege-escuro) !important;
+    fill: var(--bege-escuro) !important;
+}
 
+/* =================== HEADER E MENU =================== */
 header {
-    background: #3f1710; 
-    color: #f3caa8;
+    background: var(--vinho);
+    color: var(--bege-escuro);
     padding: 10px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    align-items: center;
-    justify-content: space-between;
 }
-
 .logo {
     height: 40px;
     margin-right: 20px;
 }
-
 header h1 {
     font-size: 30px;
-    margin: 0; 
+    margin: 0;
     padding: 0;
     display: inline-block;
     white-space: nowrap;
     line-height: 1;
 }
-
-.fonte1 {
-    font-family: 'Montserrat', Arial, sans-serif; 
-    color: #fff;
-}
-
-.fonte2 {
-    font-family: 'Playfair Display', serif; 
-    color: #fff;
-    font-style: italic;
-    font-weight: 800;
-}
+.fonte1 { font-family: 'Montserrat', Arial, sans-serif; color: #fff; }
+.fonte2 { font-family: 'Playfair Display', serif; color: #fff; font-style: italic; font-weight: 800; }
 
 .top-menu a.active {
-    background: #f3caa8;
-    color: #3f1710;
+    background: var(--bege-escuro);
+    color: var(--vinho);
     font-weight: bold;
     border-radius: 12px;
     padding: 6px 18px;
     border: none;
     transition: background 0.3s, color 0.3s;
 }
-
 
 
 /*                                  estilização do index.html                                            */
