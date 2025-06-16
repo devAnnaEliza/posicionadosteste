@@ -1,5 +1,7 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
 /*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
+
+/*                                           css global                                          */
 html, body {
     overflow-y: scroll;
     height: 100%; 
@@ -86,6 +88,9 @@ header h1 {
     transform: scale(1.1);
     color: #f3caa8;
 }
+/*                                           css global                                          */
+
+
 /*                                  estilização do index.html                                            */
 
 .hero-banner {
@@ -95,9 +100,9 @@ header h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: transparent; /* Usa o fundo do body */
+    background: transparent;
     color: #fff;
-    margin-top: 80px; /* Ajuste conforme a altura do seu header fixo */
+    margin-top: 80px; 
 }
 
 
@@ -177,6 +182,8 @@ nav ul li a:hover {
     background: #555;
 }
 /*                                      estilização do index.html                                         */
+
+
 /*                                      estilização do eventos.html                                       */
 .eventos {
     margin-top: 70px;
@@ -200,7 +207,7 @@ nav ul li a:hover {
 .eventos h2, .proximos-eventos h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #171714;
+    color: #ffffff;
     font-family: 'Playfair Display'; 
     font-weight: 600;
 }
@@ -213,7 +220,7 @@ nav ul li a:hover {
 /*estilização de cada evento*/
 .evento {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     padding: 15px;
     max-width: 300px;
@@ -242,16 +249,18 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 /*                                      estilização do eventos.html                                       */
+
 /*                                      estilização do produtos.html                                       */
 .produtos {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     padding: 15px;
     max-width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /*                                      estilização do produtos.html                                           */
+
 footer {    
     background: transparent; 
     align-items: center;
@@ -261,25 +270,7 @@ footer {
     border: none; 
     color: white; 
 }
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-@media (max-width: 768px) {
-    .hero {
-        padding: 80px 15px;
-    }
-    nav ul li {
-        margin: 0 5px;
-    }
-}
+
 /*.contato {
     padding: 50px 20px;
     background: rgba(255, 255, 255, 0.9); 
@@ -376,8 +367,8 @@ button[type="submit"]:hover {
     transform: scale(1.1);
 }
 
-/*                                         estilização da página galeria.html                                      */
 
+/*                                         estilização da página galeria.html                                      */
 
 .pagina-galeria .galeria-container {
     padding: 50px;
@@ -415,6 +406,8 @@ button[type="submit"]:hover {
     transform: scale(1.05); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
+
+/*                                         estilização da página galeria.html                                      */
 
 /*                                              media queries                                           */
 @media (max-width: 768px) {
@@ -481,5 +474,25 @@ button[type="submit"]:hover {
     }
     .hero-content {
         padding: 10px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 15px;
+    }
+    nav ul li {
+        margin: 0 5px;
     }
 }
