@@ -298,7 +298,7 @@ nav ul li a:hover {
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 32px; /* aumenta o espaço entre os cards */
     justify-content: center;
     margin-top: 24px;
 }
@@ -308,35 +308,40 @@ nav ul li a:hover {
     color: #3f1710;
     border-radius: 14px;
     box-shadow: 0 2px 12px rgba(63,23,16,0.10);
-    padding: 24px 16px 16px 16px;
-    width: 220px;
+    padding: 32px 20px 20px 20px;
+    width: 580px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    word-break: break-word;
 }
-.card:hover {
-    transform: translateY(-6px) scale(1.04);
-    box-shadow: 0 6px 24px rgba(63,23,16,0.18);
-}
+
 .card img {
-    width: 90px;
-    height: 90px;
+    width: 480px;
+    height: 420px;
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 12px;
+    border-radius: 14px;
+    margin-bottom: 16px;
     border: 3px solid #f3caa8;
 }
-.card h3 {
-    font-size: 1.1rem;
-    margin: 8px 0 4px 0;
+
+.card h2 {
+    font-size: 1.15rem;
+    margin: 10px 0 6px 0;
     color: #3f1710;
     font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
+
 .card p {
-    font-size: 0.98rem;
+    font-size: 1rem;
     color: #3f1710;
     margin: 0;
+    text-align: center;
+    white-space: pre-line; /* permite múltiplas linhas */
 }
 
 /*                                             estilização do sobrenos.html                                        */
