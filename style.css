@@ -12,7 +12,9 @@ html::-webkit-scrollbar {
     display: none;
 }
 body {
-    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
+    background: 
+        linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)),
+        url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
     /*background-size: cover;*/
     background-color: #ffe1bf;
     font-family: 'Montserrat', Arial, sans-serif;
