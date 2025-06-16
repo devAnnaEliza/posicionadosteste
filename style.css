@@ -1,87 +1,37 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
-
 /*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
-
-:root {
-    --vinho: #3f1710;
-    --marrom-escuro: #171714;
-    --bege-escuro: #f3caa8;
-    --bege-claro: #ffe1bf;
-}
-
 html, body {
-    height: 100%;
+    overflow-y: scroll;
+    height: 100%; 
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+body {
+    background: url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
+    /*background-size: cover;*/
+    background-color: #ffe1bf;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
-    background: var(--bege-claro);
-    scroll-behavior: smooth;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
     overflow-y: scroll;
 }
-
-html::-webkit-scrollbar { display: none; }
-body { text-align: center; }
-
-/* =================== OVERLAY E FUNDO GLOBAL =================== */
-.global-hero-bg {
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    background:
-        linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)),
-        url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
-    background-size: cover;
-    z-index: 0;
-    pointer-events: none;
-}
-
-
-/* =================== BARRA LATERAL =================== */
-.barra-lateral {
-    position: fixed;
-    top: 50%;
-    right: 10px;
-    left: auto;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: var(--vinho);
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 1000 !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    width: auto;
-    min-width: 0;
-    max-width: none;
-}
-.barra-lateral .icone,
-.barra-lateral .icone ion-icon {
-    color: #fff !important;
-    fill: #fff !important;
-    font-size: 28px;
-    margin: 8px 0;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.barra-lateral .icone:hover ion-icon {
-    color: var(--bege-escuro) !important;
-    fill: var(--bege-escuro) !important;
-}
-
-/* =================== HEADER E MENU =================== */
 header {
-    background: var(--vinho);
-    color: var(--bege-escuro);
+    background: #3f1710; 
+    color: #f3caa8;
     padding: 10px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     height: 40px;
@@ -89,26 +39,50 @@ header {
 }
 header h1 {
     font-size: 30px;
-    margin: 0;
+    margin: 0; 
     padding: 0;
     display: inline-block;
     white-space: nowrap;
     line-height: 1;
 }
-.fonte1 { font-family: 'Montserrat', Arial, sans-serif; color: #fff; }
-.fonte2 { font-family: 'Playfair Display', serif; color: #fff; font-style: italic; font-weight: 800; }
-
-.top-menu a.active {
-    background: var(--bege-escuro);
-    color: var(--vinho);
-    font-weight: bold;
-    border-radius: 12px;
-    padding: 6px 18px;
-    border: none;
-    transition: background 0.3s, color 0.3s;
+.fonte1 {
+    font-family: 'Montserrat', Arial, sans-serif; 
+    color: #fff;
 }
-
-
+.fonte2 {
+    font-family: 'Playfair Display', serif; 
+    color: #fff;
+    font-style: italic;
+    font-weight: 800;
+}
+.barra-lateral {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: #3f1710;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+}
+.barra-lateral .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background 0.3s, transform 0.3s;
+}
+.barra-lateral .icone:hover {
+    transform: scale(1.1);
+    color: #f3caa8;
+}
 /*                                  estilização do index.html                                            */
 nav {
     display: flex;
@@ -116,18 +90,15 @@ nav {
     justify-content: space-between;
     padding: 0 20px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     font-family: 'Montserrat', Arial, sans-serif;
     color: white;
@@ -136,78 +107,56 @@ nav ul li a {
     font-weight: bold;
     transition: color 0.3s;
 }
-
 nav ul li a:hover {
     color: #f3caa8; 
 }
-
-.hero-banner {
-    /*position: relative;*/
-    width: 100%;
-    min-height: 60vh;
-    /*background: no-repeat center center/cover;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+    padding: 100px 20px;
     text-align: center;
-    color: #fff;
 }
-
-/*.hero-banner::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(63, 23, 16, 0.5); /* overlay vinho 
-    z-index: 1;
-}*/
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 48px;
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
 }
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    font-family: 'Montserrat', Arial, sans-serif;
+.hero p {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 600px;
 }
-
-/*                                     estilização do index.html                                         */
-
-
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #555;
+}
+/*                                      estilização do index.html                                         */
 /*                                      estilização do eventos.html                                       */
 .eventos {
     margin-top: 70px;
 }
-
 .galeria {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 .proximos-eventos {
     margin-top: 15px;
     margin-bottom: 30px;
 }
-
 /*.eventos, .proximos-eventos {
     padding: 50px 20px;
     text-align: center;
     color: #333;
     
 }*/
-
 .eventos h2, .proximos-eventos h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -215,14 +164,12 @@ nav ul li a:hover {
     font-family: 'Playfair Display'; 
     font-weight: 600;
 }
-
 .galeria, .galeria-eventos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
-
 /*estilização de cada evento*/
 .evento {
     background: #fff;
@@ -233,37 +180,29 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .evento img {
     max-width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
 .evento h3 {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
     font-family: 'Montserrat', Arial, sans-serif; 
 }
-
 .evento p {
     font-size: 16px;
     color: #666;
 }
-
 /*animação para destacar os eventos*/
 .evento:hover {
     transform: scale(1.05);
     transition: all 0.3s ease;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
 /*                                      estilização do eventos.html                                       */
-
-
 /*                                      estilização do produtos.html                                       */
-
 .produtos {
     background: #fff;
     border: 1px solid #ddd;
@@ -272,7 +211,6 @@ nav ul li a:hover {
     max-width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 /*                                      estilização do produtos.html                                           */
 footer {    
     background: transparent; 
@@ -283,8 +221,6 @@ footer {
     border: none; 
     color: white; 
 }
-
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -296,17 +232,14 @@ footer {
         transform: scale(1);
     }
 }
-
 @media (max-width: 768px) {
     .hero {
         padding: 80px 15px;
     }
-
     nav ul li {
         margin: 0 5px;
     }
 }
-
 /*.contato {
     padding: 50px 20px;
     background: rgba(255, 255, 255, 0.9); 
@@ -316,25 +249,20 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;
 }
-
 .contato h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #333;
 }
-
-
 .form-group {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column; 
 }
-
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .form-group input, .form-group select {
     width: 100%;
     padding: 10px;
@@ -343,7 +271,6 @@ footer {
     font-size: 16px;
     box-sizing: border-box; 
 }
-
 button[type="submit"] {
     width: 100%;
     padding: 10px;
@@ -354,11 +281,9 @@ button[type="submit"] {
     font-size: 16px;
     cursor: pointer;
 }
-
 button[type="submit"]:hover {
     background: #1DA851;
 }*/
-
 .swiper-container {
     position: relative;
     width: 300px;
@@ -366,14 +291,12 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
     overflow: hidden;
 }
-
 .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px !important;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -392,15 +315,12 @@ button[type="submit"]:hover {
     pointer-events: none;
     transition: opacity 0.3s ease, background 0.3s ease;
 }
-
 .swiper-button-next {
     right: 10px;
 }
-
 .swiper-button-prev {
     left: 10px;
 }
-
 .swiper-container:hover .swiper-button-next,
 .swiper-container:hover .swiper-button-prev {
     opacity: 1;
@@ -415,9 +335,6 @@ button[type="submit"]:hover {
 .swiper-button-prev:hover .swiper-button-prev{
     transform: scale(1.1);
 }
-
-
-
 
 /*                                         estilização da página galeria.html                                      */
 
