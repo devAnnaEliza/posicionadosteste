@@ -87,6 +87,35 @@ header h1 {
     color: #f3caa8;
 }
 /*                                  estilização do index.html                                            */
+
+.hero-banner {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent; /* Usa o fundo do body */
+    color: #fff;
+    margin-top: 80px; /* Ajuste conforme a altura do seu header fixo */
+}
+
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #fff;
+}
+
 nav {
     display: flex;
     align-items: center;
