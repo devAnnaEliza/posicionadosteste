@@ -103,7 +103,15 @@ header h1 {
 
 .hero-content h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-content h4 {
+    font-size: 1.0rem;
+    margin: 0px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: #ffffff;
