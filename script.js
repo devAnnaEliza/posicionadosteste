@@ -24,21 +24,36 @@ if (document.querySelector('.swiper-container')) {
 //add mais devocionais ao calendário
 if (document.getElementById('calendario-dias')) {
     const devocionais = {
-        '2025-06-17': {
-            titulo: 'Confiança em Deus',
-            texto: '“Confie no Senhor de todo o seu coração...”',
-            link: '#'
-        },
-        '2025-06-16': {
-            titulo: 'Esperança Renovada',
-            texto: '“A esperança não decepciona...”',
-            link: '#'
-        },
-        '2025-06-15': {
-            titulo: 'Perseverança na Fé',
-            texto: '“Permaneça firme, pois Deus é fiel...”',
-            link: '#'
-        }
+        '2025-06-01': { titulo: 'Novo Mês, Novos Começos', texto: '“Eis que faço novas todas as coisas.” (Ap 21:5)', link: '#' },
+        '2025-06-02': { titulo: 'A Força da Oração', texto: '“Orai sem cessar.” (1Ts 5:17)', link: '#' },
+        '2025-06-03': { titulo: 'Confiança Plena', texto: '“Entrega o teu caminho ao Senhor, confia nele...” (Sl 37:5)', link: '#' },
+        '2025-06-04': { titulo: 'Alegria no Senhor', texto: '“A alegria do Senhor é a nossa força.” (Ne 8:10)', link: '#' },
+        '2025-06-05': { titulo: 'Perseverança na Fé', texto: '“Corramos com perseverança a carreira...” (Hb 12:1)', link: '#' },
+        '2025-06-06': { titulo: 'Amor ao Próximo', texto: '“Ame o seu próximo como a si mesmo.” (Mc 12:31)', link: '#' },
+        '2025-06-07': { titulo: 'Gratidão Diária', texto: '“Em tudo dai graças...” (1Ts 5:18)', link: '#' },
+        '2025-06-08': { titulo: 'Serviço com Amor', texto: '“Sirvam uns aos outros com amor.” (Gl 5:13)', link: '#' },
+        '2025-06-09': { titulo: 'Esperança Viva', texto: '“Bendito seja o Deus... que nos regenerou para uma viva esperança.” (1Pe 1:3)', link: '#' },
+        '2025-06-10': { titulo: 'Paz Interior', texto: '“Deixo-vos a paz, a minha paz vos dou...” (Jo 14:27)', link: '#' },
+        '2025-06-11': { titulo: 'Fé que Move Montanhas', texto: '“Se tiverdes fé... direis a este monte...” (Mt 17:20)', link: '#' },
+        '2025-06-12': { titulo: 'Sabedoria do Alto', texto: '“Se algum de vós tem falta de sabedoria, peça a Deus...” (Tg 1:5)', link: '#' },
+        '2025-06-13': { titulo: 'Vencendo o Medo', texto: '“No amor não há medo...” (1Jo 4:18)', link: '#' },
+        '2025-06-14': { titulo: 'Descanso em Deus', texto: '“Vinde a mim... e eu vos aliviarei.” (Mt 11:28)', link: '#' },
+        '2025-06-15': { titulo: 'Renovação Diária', texto: '“As misericórdias do Senhor se renovam a cada manhã.” (Lm 3:23)', link: '#' },
+        '2025-06-16': { titulo: 'Esperança Renovada', texto: '“A esperança não decepciona...” (Rm 5:5)', link: '#' },
+        '2025-06-17': { titulo: 'Confiança em Deus', texto: '“Confie no Senhor de todo o seu coração...” (Pv 3:5)', link: '#' },
+        '2025-06-18': { titulo: 'Luz para o Caminho', texto: '“Lâmpada para os meus pés é tua palavra...” (Sl 119:105)', link: '#' },
+        '2025-06-19': { titulo: 'Vida em Comunhão', texto: '“Oh! Quão bom e quão suave é que os irmãos vivam em união.” (Sl 133:1)', link: '#' },
+        '2025-06-20': { titulo: 'Coragem para Avançar', texto: '“Seja forte e corajoso...” (Js 1:9)', link: '#' },
+        '2025-06-21': { titulo: 'Bondade e Misericórdia', texto: '“Bondade e misericórdia certamente me seguirão...” (Sl 23:6)', link: '#' },
+        '2025-06-22': { titulo: 'Verdade que Liberta', texto: '“Conhecereis a verdade, e a verdade vos libertará.” (Jo 8:32)', link: '#' },
+        '2025-06-23': { titulo: 'Frutos do Espírito', texto: '“O fruto do Espírito é amor, alegria, paz...” (Gl 5:22)', link: '#' },
+        '2025-06-24': { titulo: 'Deus é Fiel', texto: '“Fiel é o que vos chama...” (1Ts 5:24)', link: '#' },
+        '2025-06-25': { titulo: 'Viva com Propósito', texto: '“Tudo posso naquele que me fortalece.” (Fp 4:13)', link: '#' },
+        '2025-06-26': { titulo: 'Perdão que Liberta', texto: '“Perdoai, e sereis perdoados.” (Lc 6:37)', link: '#' },
+        '2025-06-27': { titulo: 'Deus é Amor', texto: '“Deus é amor...” (1Jo 4:8)', link: '#' },
+        '2025-06-28': { titulo: 'Vitória em Cristo', texto: '“Mas graças a Deus, que nos dá a vitória...” (1Co 15:57)', link: '#' },
+        '2025-06-29': { titulo: 'Crescimento Espiritual', texto: '“Antes, crescei na graça e no conhecimento...” (2Pe 3:18)', link: '#' },
+        '2025-06-30': { titulo: 'Gratidão Final', texto: '“Dai graças ao Senhor, porque ele é bom...” (Sl 136:1)', link: '#' }
     };
 
     const calendarioMesAno = document.getElementById('calendario-mes-ano');
