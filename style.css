@@ -324,14 +324,12 @@ nav ul li a:hover {
 .cal-dia {
     width: 32px;
     height: 32px;
-    border: none;
     border-radius: 50%;
     background: #f3caa8;
     color: #3f1710;
     font-weight: bold;
+    border: none;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    margin-bottom: 2px;
 }
 .cal-dia.hoje {
     border: 2px solid #3f1710;
