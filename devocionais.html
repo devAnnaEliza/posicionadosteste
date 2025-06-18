@@ -50,25 +50,18 @@
     <main class="devocionais-container">
         <section class="devocionais-calendario-section">
             <div class="devocionais-calendario-layout">
-                <!-- Calendário lateral -->
                 <aside class="devocionais-calendario">
                     <div class="calendario-mes">
                         <button class="cal-btn prev">&lt;</button>
-                        <span>Junho 2025</span>
+                        <span id="calendario-mes-ano"></span>
                         <button class="cal-btn next">&gt;</button>
                     </div>
-                    <div class="calendario-dias">
-                        <!-- Exemplo de dias do mês -->
-                        <button class="cal-dia">15</button>
-                        <button class="cal-dia">16</button>
-                        <button class="cal-dia hoje selecionado">17</button>
-                        <button class="cal-dia">18</button>
-                        <button class="cal-dia">19</button>
-                        <!-- ... -->
+                    <div class="calendario-semana">
+                        <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
                     </div>
+                    <div class="calendario-dias" id="calendario-dias"></div>
                 </aside>
 
-                <!-- Devocional do dia -->
                 <div class="devocional-dia">
                     <h2>Devocional de Hoje</h2>
                     <span class="devocional-data">17/06/2025</span>
@@ -78,13 +71,11 @@
                 </div>
             </div>
 
-            <!-- Últimos 7 dias -->
             <div class="devocionais-ultimos">
                 <h3>Últimos 7 dias</h3>
                 <ul>
                     <li><span class="devocional-data">16/06</span> Esperança Renovada</li>
                     <li><span class="devocional-data">15/06</span> Perseverança na Fé</li>
-                    <!-- ... -->
                 </ul>
             </div>
         </section>
