@@ -59,6 +59,26 @@ const devocionais = {
         titulo: 'Perseverança na Fé',
         texto: '“Permaneça firme, pois Deus é fiel...”',
         link: '#'
+    },
+    '2025-06-14': {
+        titulo: 'Gratidão Diária',
+        texto: '“Dêem graças em todas as circunstâncias...”',
+        link: '#'
+    },
+    '2025-06-13': {
+        titulo: 'Serviço com Amor',
+        texto: '“Sirvam uns aos outros com amor...”',
+        link: '#'
+    },
+    '2025-06-12': {
+        titulo: 'Paz Interior',
+        texto: '“Deixo-vos a paz, a minha paz vos dou...”',
+        link: '#'
+    },
+    '2025-06-11': {
+        titulo: 'Alegria no Senhor',
+        texto: '“A alegria do Senhor é a nossa força...”',
+        link: '#'
     }
 };
 
