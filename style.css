@@ -263,6 +263,37 @@ nav ul li a:hover {
 
 /*                                         estilização do sobrenos.html                                         */
 
+.sobre-nos-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px 40px 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-radius: 18px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-nos-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sobre-nos-hero p {
+    font-size: 1.25rem;
+    color: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 /* estilização para equipe */
 .sobre-nos-equipe .cards-container {
     display: flex;
