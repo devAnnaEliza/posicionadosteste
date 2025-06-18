@@ -52,9 +52,9 @@
             <div class="devocionais-calendario-layout">
                 <aside class="devocionais-calendario">
                     <div class="calendario-mes">
-                        <button class="cal-btn prev">&lt;</button>
+                        <button class="cal-btn prev" type="button">&lt;</button>
                         <span id="calendario-mes-ano"></span>
-                        <button class="cal-btn next">&gt;</button>
+                        <button class="cal-btn next" type="button">&gt;</button>
                     </div>
                     <div class="calendario-semana">
                         <span>D</span><span>S</span><span>T</span><span>Q</span><span>Q</span><span>S</span><span>S</span>
@@ -62,20 +62,18 @@
                     <div class="calendario-dias" id="calendario-dias"></div>
                 </aside>
 
-                <div class="devocional-dia">
+                <div class="devocional-dia" id="devocional-dia">
                     <h2>Devocional de Hoje</h2>
-                    <span class="devocional-data">17/06/2025</span>
-                    <h3>Confiança em Deus</h3>
-                    <p>“Confie no Senhor de todo o seu coração...”</p>
-                    <a href="#">Leia mais</a>
+                    <span class="devocional-data" id="devocional-data">17/06/2025</span>
+                    <h3 id="devocional-titulo">Confiança em Deus</h3>
+                    <p id="devocional-texto">“Confie no Senhor de todo o seu coração...”</p>
+                    <a href="#" id="devocional-link">Leia mais</a>
                 </div>
             </div>
 
             <div class="devocionais-ultimos">
                 <h3>Últimos 7 dias</h3>
-                <ul>
-                    <li><span class="devocional-data">16/06</span> Esperança Renovada</li>
-                    <li><span class="devocional-data">15/06</span> Perseverança na Fé</li>
+                <ul id="devocionais-ultimos-lista">
                 </ul>
             </div>
         </section>
