@@ -263,82 +263,40 @@ nav ul li a:hover {
 
 /*                                      estilização do devocionais.html                                           */
 
-.devocionais-container {
-    max-width: 900px;
-    margin: 100px auto 40px auto;
-    padding: 20px;
+.devocionais-timeline-section {
+    max-width: 700px;
+    margin: 60px auto 40px auto;
 }
-
-.devocionais-hero {
-    text-align: center;
-    margin-bottom: 40px;
+.devocionais-timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-.devocionais-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 12px;
-}
-
-.devocionais-hero p {
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-.devocionais-lista {
+.devocionais-timeline li {
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-}
-
-.devocional-card {
-    background: #fff;
-    color: #3f1710;
-    border-radius: 14px;
-    box-shadow: 0 2px 12px rgba(63,23,16,0.10);
-    padding: 24px 18px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 32px;
 }
-.devocional-card:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 6px 24px rgba(63,23,16,0.18);
+.devocional-timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: #3f1710;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 8px;
 }
-.devocional-card h2 {
-    font-size: 1.2rem;
-    margin: 0 0 8px 0;
+.devocional-timeline-content h3 {
+    margin: 0 0 4px 0;
     color: #3f1710;
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.15rem;
 }
 .devocional-data {
-    font-size: 0.95rem;
     color: #888;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
 }
-.devocional-texto {
-    font-size: 1rem;
-    color: #3f1710;
-    margin-bottom: 16px;
-}
-.btn-leia-mais {
-    align-self: flex-end;
-    background: #3f1710;
-    color: #fff;
-    padding: 6px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.2s;
-}
-.btn-leia-mais:hover {
-    background: #f3caa8;
-    color: #3f1710;
+.devocional-timeline-content p {
+    color: #171714;
+    margin: 8px 0 0 0;
 }
 
 /*                                       estilização do devocionais.html                                          */
