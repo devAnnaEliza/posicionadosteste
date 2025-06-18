@@ -281,8 +281,30 @@ nav ul li a:hover {
     border-radius: 14px;
     box-shadow: 0 2px 12px rgba(63,23,16,0.10);
     padding: 24px 16px;
-    min-width: 180px;
+    min-width: 220px;
     text-align: center;
+}
+
+.calendario-mes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3f1710;
+}
+.cal-btn {
+    background: #f3caa8;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #3f1710;
+    transition: background 0.2s;
+}
+.cal-btn:hover {
+    background: #ffe1bf;
 }
 
 .calendario-semana {
@@ -294,8 +316,8 @@ nav ul li a:hover {
     font-weight: bold;
 }
 .calendario-dias {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 4px;
     justify-content: center;
 }
@@ -391,7 +413,6 @@ nav ul li a:hover {
     color: #888;
     margin-right: 8px;
 }
-
 /*                                       estilização do devocionais.html                                          */
 
 /*                                         estilização do sobrenos.html                                         */
