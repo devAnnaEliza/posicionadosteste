@@ -263,40 +263,39 @@ nav ul li a:hover {
 
 /*                                      estilização do devocionais.html                                           */
 
-.devocionais-timeline-section {
+.devocionais-lista-section {
     max-width: 700px;
     margin: 60px auto 40px auto;
 }
-.devocionais-timeline {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.devocionais-lista {
+    max-width: 700px;
+    margin: 0 auto;
 }
-.devocionais-timeline li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 32px;
+.devocional-lista-item {
+    padding: 24px 0;
 }
-.devocional-timeline-dot {
-    width: 16px;
-    height: 16px;
-    background: #3f1710;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-top: 8px;
-}
-.devocional-timeline-content h3 {
-    margin: 0 0 4px 0;
+.devocional-lista-item h3 {
     color: #3f1710;
+    margin-bottom: 4px;
     font-size: 1.15rem;
 }
 .devocional-data {
     color: #888;
     font-size: 0.95rem;
 }
-.devocional-timeline-content p {
+.devocional-lista-item p {
     color: #171714;
-    margin: 8px 0 0 0;
+    margin: 8px 0 12px 0;
+}
+.devocional-lista-item a {
+    color: #3f1710;
+    font-weight: bold;
+    text-decoration: underline;
+}
+hr {
+    border: none;
+    border-top: 1px solid #f3caa8;
+    margin: 0;
 }
 
 /*                                       estilização do devocionais.html                                          */

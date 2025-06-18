@@ -16,6 +16,7 @@
     
     <script src="script.js"></script>
 </head>
+
 <body>
     <section class="global-hero-bg"></section>
     <header>
@@ -47,22 +48,44 @@
     </div>
 
     <main class="devocionais-container">
-        <section class="devocionais-lista-section">
-            <h2>Devocionais - Lista Simples</h2>
-            <div class="devocionais-lista">
-                <article class="devocional-lista-item">
-                    <h3>Confiança em Deus</h3>
+        <section class="devocionais-calendario-section">
+            <div class="devocionais-calendario-layout">
+                <!-- Calendário lateral -->
+                <aside class="devocionais-calendario">
+                    <div class="calendario-mes">
+                        <button class="cal-btn prev">&lt;</button>
+                        <span>Junho 2025</span>
+                        <button class="cal-btn next">&gt;</button>
+                    </div>
+                    <div class="calendario-dias">
+                        <!-- Exemplo de dias do mês -->
+                        <button class="cal-dia">15</button>
+                        <button class="cal-dia">16</button>
+                        <button class="cal-dia hoje selecionado">17</button>
+                        <button class="cal-dia">18</button>
+                        <button class="cal-dia">19</button>
+                        <!-- ... -->
+                    </div>
+                </aside>
+
+                <!-- Devocional do dia -->
+                <div class="devocional-dia">
+                    <h2>Devocional de Hoje</h2>
                     <span class="devocional-data">17/06/2025</span>
+                    <h3>Confiança em Deus</h3>
                     <p>“Confie no Senhor de todo o seu coração...”</p>
                     <a href="#">Leia mais</a>
-                </article>
-                <hr>
-                <article class="devocional-lista-item">
-                    <h3>Esperança Renovada</h3>
-                    <span class="devocional-data">10/06/2025</span>
-                    <p>“A esperança não decepciona...”</p>
-                    <a href="#">Leia mais</a>
-                </article>
+                </div>
+            </div>
+
+            <!-- Últimos 7 dias -->
+            <div class="devocionais-ultimos">
+                <h3>Últimos 7 dias</h3>
+                <ul>
+                    <li><span class="devocional-data">16/06</span> Esperança Renovada</li>
+                    <li><span class="devocional-data">15/06</span> Perseverança na Fé</li>
+                    <!-- ... -->
+                </ul>
             </div>
         </section>
     </main>
