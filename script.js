@@ -103,6 +103,8 @@ if (document.getElementById('calendario-dias')) {
         }
     }
 
+    const devocionalReferencia = document.getElementById('devocional-referencia');
+
     function mostrarDevocionalDoDia(data) {
         const dataISO = formatarDataISO(data);
         const dev = devocionais[dataISO];
@@ -110,11 +112,13 @@ if (document.getElementById('calendario-dias')) {
         if (dev) {
             devocionalTitulo.textContent = dev.titulo;
             devocionalTexto.textContent = dev.texto;
+            devocionalReferencia.textContent = dev.referencia || '';
             devocionalLink.href = dev.link;
             devocionalLink.style.display = '';
         } else {
-            devocionalTitulo.textContent = 'Sem devocional cadastrado';
+            devocionalTitulo.textContent = 'Sem devocional cadastrada';
             devocionalTexto.textContent = '';
+            devocionalReferencia.textContent = '';
             devocionalLink.style.display = 'none';
         }
     }
