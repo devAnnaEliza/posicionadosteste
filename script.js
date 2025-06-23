@@ -33,7 +33,7 @@ for (let mes = 1; mes <= 12; mes++) {
         const diaStr = dia.toString().padStart(2, '0');
         devocionais[`${ano}-${mesStr}-${diaStr}`] = {
             titulo: `Devocional do dia ${diaStr}/${mesStr}/${ano}`,
-            texto: `Esta é a devocional automática para o dia ${diaStr}/${mesStr}/${ano}. Medite, ore e compartilhe!`,
+            texto: `Esta é a devocional do dia ${diaStr}/${mesStr}/${ano}. Medite, ore e compartilhe!`,
             link: '#'
         };
     }
