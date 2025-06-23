@@ -21,23 +21,16 @@ if (document.querySelector('.swiper-container')) {
     }
 }
 
-//gerador automatico de devocionais
-const devocionais = {};
-const ano = 2025;
+// devocionais num arquivo .json
+let devocionais = {};
 
-for (let mes = 1; mes <= 12; mes++) {
-    // Descobre quantos dias tem o mês
-    const diasNoMes = new Date(ano, mes, 0).getDate();
-    for (let dia = 1; dia <= diasNoMes; dia++) {
-        const mesStr = mes.toString().padStart(2, '0');
-        const diaStr = dia.toString().padStart(2, '0');
-        devocionais[`${ano}-${mesStr}-${diaStr}`] = {
-            titulo: `Devocional do dia ${diaStr}/${mesStr}/${ano}`,
-            texto: `Esta é a devocional do dia ${diaStr}/${mesStr}/${ano}. Medite, ore e compartilhe!`,
-            link: '#'
-        };
-    }
-}
+if (document.getElementById('calendario-dias')) {
+    fetch('devocionais.json')
+      .then(response => response.json())
+      .then(data => {
+        devocionais = data;
+        inicializarDevocionais();
+      });
 
     const calendarioMesAno = document.getElementById('calendario-mes-ano');
     const calendarioDias = document.getElementById('calendario-dias');
@@ -151,3 +144,4 @@ for (let mes = 1; mes <= 12; mes++) {
     renderizarCalendario(dataAtual.getMonth(), dataAtual.getFullYear());
     mostrarDevocionalDoDia(selecionado);
     mostrarUltimosDevocionais(selecionado);
+}
