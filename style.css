@@ -568,8 +568,8 @@ nav ul li a:hover {
 }
 
 .sobre-nos-ministerio .ministerio-img {
-    width: 220px;
-    height: 220px;
+    width: 380px;
+    height: 330px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(63,23,16,0.10);
@@ -577,11 +577,11 @@ nav ul li a:hover {
 }
 
 .sobre-nos-ministerio .ministerio-desc {
-    max-width: 380px;
+    max-width: 420px;
     color: #3f1710;
     font-size: 1.1rem;
     text-align: left;
-    margin: 0 auto;
+    margin: 0;
 }
 
 /*                                             estilização do sobrenos.html                                        */
