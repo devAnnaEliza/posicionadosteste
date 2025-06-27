@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
 }
 body {
     background: 
-        linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)),
+        linear-gradient(rgba(63, 23, 16, 0.301), rgba(63,23,16,0.5)),
         url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
     /*background-size: cover;*/
     background-color: #ffe1bf;
@@ -222,6 +222,9 @@ nav ul li a:hover {
     background: #fff;
     border: 1px solid #ffffff;
     border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(63,23,16,0.10);
+    border-top: 4px solid #f3caa8;
+    border-bottom: 2px solid #3f1710;
     padding: 15px;
     max-width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -255,6 +258,9 @@ nav ul li a:hover {
     background: #fff;
     border: 1px solid #ffffff;
     border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(63,23,16,0.10);
+    border-top: 4px solid #f3caa8;
+    border-bottom: 2px solid #3f1710;
     padding: 15px;
     max-width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
