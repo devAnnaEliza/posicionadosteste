@@ -614,7 +614,7 @@ nav ul li a:hover {
 /*                                             estilização do sobrenos.html                                        */
 
 /*swipper e footer*/
-footer {    
+/*footer {    
     background: transparent; 
     align-items: center;
     justify-content: center;
@@ -624,7 +624,7 @@ footer {
     color: white; 
 }
 
-/*.contato {
+.contato {
     padding: 50px 20px;
     background: rgba(255, 255, 255, 0.9); 
     max-width: 600px;
@@ -681,43 +681,43 @@ button[type="submit"]:hover {
     object-fit: cover;
     border-radius: 10px !important;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
-    color: #171714;
+    background: #f3caa8;
+    color: #3f1710;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 38px;
+    height: 38px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, background 0.3s ease;
-}
-.swiper-button-next {
-    right: 10px;
-}
-.swiper-button-prev {
-    left: 10px;
-}
-.swiper-container:hover .swiper-button-next,
-.swiper-container:hover .swiper-button-prev {
-    opacity: 1;
+    box-shadow: 0 2px 8px rgba(63,23,16,0.10);
+    border: 2px solid #3f1710;
+    font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
+    font-size: 1.3rem;
+    opacity: 0.95;
     pointer-events: auto;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    z-index: 10;
 }
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: #3f1710;
+    color: #ffe1bf;
+    transform: scale(1.08);
+    border-color: #f3caa8;
+}
+
 .swiper-button-next::after, 
 .swiper-button-prev::after {
-    font-size: 10px;
+    font-size: 1.3rem;
+    font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
     font-weight: bold;
-}
-.swiper-button-next:hover .swiper-button-next, 
-.swiper-button-prev:hover .swiper-button-prev{
-    transform: scale(1.1);
 }
 
 
