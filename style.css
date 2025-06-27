@@ -720,6 +720,7 @@ button[type="submit"]:hover {
     font-weight: bold;
     color: inherit;
     line-height: 1;
+    background-image: none !important;
 }
 
 .swiper-button-prev::after {
@@ -729,9 +730,13 @@ button[type="submit"]:hover {
     font-weight: bold;
     color: inherit;
     line-height: 1;
+    background-image: none !important;
 }
 
-
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    background-image: none !important;
+}
 
 /*                                         estilização da página galeria.html                                      */
 
