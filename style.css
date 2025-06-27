@@ -718,6 +718,8 @@ button[type="submit"]:hover {
     font-size: 1.3rem;
     font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
     font-weight: bold;
+    color: inherit;
+    content: '';
 }
 
 
