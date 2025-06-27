@@ -560,7 +560,7 @@ nav ul li a:hover {
 /* estilização para ministério */
 .sobre-nos-ministerio {
     margin: 20px auto 0 auto;
-    max-width: 1100px;
+    width: 900px;
     text-align: center;
 }
 
