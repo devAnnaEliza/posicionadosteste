@@ -1,5 +1,6 @@
 /*corrigir alguns detalhes de margem, escolher fontes, personalizar com a cara da marca*/
-/*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf */
+/*cores utilizadas: vinho - #3f1710 | marrom escuro - #171714 | bege escuro - #f3caa8 | bege claro - #ffe1bf
+** fundo vinho escuro/translúcido - background: linear-gradient(rgba(63,23,16,0.5), rgba(63,23,16,0.5)) */
 
 /*                                           css global                                          */
 html, body {
@@ -15,7 +16,7 @@ html::-webkit-scrollbar {
 }
 body {
     background: 
-        linear-gradient(rgba(63, 23, 16, 0.301), rgba(63,23,16,0.5)),
+        linear-gradient(rgba(63, 23, 16, 0.445), rgba(63,23,16,0.5)),
         url('img/mat_idvisual/telainicialclean.png') no-repeat center top;
     /*background-size: cover;*/
     background-color: #ffe1bf;
