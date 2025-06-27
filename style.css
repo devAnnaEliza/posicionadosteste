@@ -688,8 +688,8 @@ button[type="submit"]:hover {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
-    color: #171714;
+    background: #ffe1bf;
+    color: #3f1710;
     border-radius: 50%;
     width: 20px;
     height: 20px;
