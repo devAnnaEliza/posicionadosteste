@@ -679,7 +679,7 @@ button[type="submit"]:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px !important;
+    border-radius: 10px;
 }
 
 .swiper-button-next,
@@ -718,10 +718,24 @@ button[type="submit"]:hover {
     font-size: 1.3rem;
     font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
     font-weight: bold;
-    color: inherit;
-    content: '';
 }
 
+.swiper-button-next::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('data:image/svg+xml;utf8,<svg fill="%233f1710" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.29 6.71a1 1 0 0 1 1.42 0l4 4a1 1 0 0 1 0 1.42l-4 4a1 1 0 1 1-1.42-1.42L12.59 12l-3.3-3.29a1 1 0 0 1 0-1.42z"/></svg>') no-repeat center;
+    background-size: contain;
+}
+.swiper-button-prev::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('data:image/svg+xml;utf8,<svg fill="%233f1710" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.71 17.29a1 1 0 0 1-1.42 0l-4-4a1 1 0 0 1 0-1.42l4-4a1 1 0 1 1 1.42 1.42L11.41 12l3.3 3.29a1 1 0 0 1 0 1.42z"/></svg>') no-repeat center;
+    background-size: contain;
+}
 
 /*                                         estilização da página galeria.html                                      */
 
