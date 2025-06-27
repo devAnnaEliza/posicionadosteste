@@ -538,27 +538,50 @@ nav ul li a:hover {
 }
 
 /* estilização para ministério */
+.sobre-nos-ministerio {
+    margin: 20px auto 0 auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.sobre-nos-ministerio h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
 .sobre-nos-ministerio .ministerio-flex {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
-    margin-top: 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(63,23,16,0.10);
+    border-top: 4px solid #f3caa8;
+    border-bottom: 2px solid #3f1710;
+    padding: 32px 24px;
     margin-bottom: 24px;
 }
+
 .sobre-nos-ministerio .ministerio-img {
-    width: 320px;
-    height: 320px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: 0 2px 12px rgba(63,23,16,0.10);
+    border: 3px solid #f3caa8;
 }
+
 .sobre-nos-ministerio .ministerio-desc {
     max-width: 380px;
-    color: #fff;
-    font-size: 1.2rem;
+    color: #3f1710;
+    font-size: 1.1rem;
     text-align: left;
+    margin: 0 auto;
 }
 
 /*                                             estilização do sobrenos.html                                        */
