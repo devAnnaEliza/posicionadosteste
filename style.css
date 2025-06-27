@@ -698,7 +698,7 @@ button[type="submit"]:hover {
     box-shadow: 0 2px 8px rgba(63,23,16,0.10);
     border: 2px solid #3f1710;
     font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     opacity: 0.95;
     pointer-events: auto;
     transition: background 0.2s, color 0.2s, transform 0.2s;
@@ -713,29 +713,25 @@ button[type="submit"]:hover {
     border-color: #f3caa8;
 }
 
-.swiper-button-next::after, 
-.swiper-button-prev::after {
-    font-size: 1.3rem;
+.swiper-button-next::after {
+    content: '›';
     font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
+    font-size: 1.7rem;
     font-weight: bold;
+    color: inherit;
+    line-height: 1;
 }
 
-.swiper-button-next::after {
-    content: '';
-    display: block;
-    width: 18px;
-    height: 18px;
-    background: url('data:image/svg+xml;utf8,<svg fill="%233f1710" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.29 6.71a1 1 0 0 1 1.42 0l4 4a1 1 0 0 1 0 1.42l-4 4a1 1 0 1 1-1.42-1.42L12.59 12l-3.3-3.29a1 1 0 0 1 0-1.42z"/></svg>') no-repeat center;
-    background-size: contain;
-}
 .swiper-button-prev::after {
-    content: '';
-    display: block;
-    width: 18px;
-    height: 18px;
-    background: url('data:image/svg+xml;utf8,<svg fill="%233f1710" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.71 17.29a1 1 0 0 1-1.42 0l-4-4a1 1 0 0 1 0-1.42l4-4a1 1 0 1 1 1.42 1.42L11.41 12l3.3 3.29a1 1 0 0 1 0 1.42z"/></svg>') no-repeat center;
-    background-size: contain;
+    content: '‹';
+    font-family: 'Playfair Display', 'Montserrat', Arial, sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: inherit;
+    line-height: 1;
 }
+
+
 
 /*                                         estilização da página galeria.html                                      */
 
