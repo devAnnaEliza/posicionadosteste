@@ -783,7 +783,7 @@ nav ul li a#abrir-login ion-icon {
     position: absolute;
     top: 44px;
     right: 65px;
-    background: #3f1710;
+    background: linear-gradient(rgba(63, 23, 16, 0.938), rgba(63, 23, 16, 0.938));
     border-radius: 5px;
     box-shadow: 0 6px 32px rgba(63,23,16,0.13);
     height: 220px;
