@@ -622,52 +622,9 @@ nav ul li a:hover {
     transition: .4s;
     border: none; 
     color: white; 
-}
-
-.contato {
-    padding: 50px 20px;
-    background: rgba(255, 255, 255, 0.9); 
-    max-width: 600px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-.contato h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-.form-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column; 
-}
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-.form-group input, .form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box; 
-}
-button[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background: #25D366; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-button[type="submit"]:hover {
-    background: #1DA851;
 }*/
+
+
 .swiper-container {
     position: relative;
     width: 300px;
@@ -786,7 +743,68 @@ button[type="submit"]:hover {
 
 /*                                         estilização da página galeria.html                                      */
 
-/*                                              media queries                                           */
+/*                                            estilização pop up                                                   */
+
+.login-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(63,23,16,0.13);
+    padding: 28px 24px 18px 24px;
+    z-index: 9999;
+    min-width: 260px;
+    border: 2px solid #f3caa8;
+}
+.login-form h3 {
+    font-family: 'Playfair Display', serif;
+    color: #3f1710;
+    margin-bottom: 16px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.login-form input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #f3caa8;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.login-form button {
+    width: 100%;
+    background: #f3caa8;
+    color: #3f1710;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login-form button:hover {
+    background: #3f1710;
+    color: #ffe1bf;
+}
+.cadastre-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+.cadastre-link a {
+    color: #3f1710;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*                                            estilização pop up                                                   */
+
+/*                                                  media queries                                                 */
 @media (max-width: 768px) {
     .top-bar nav {
         flex-direction: column;
