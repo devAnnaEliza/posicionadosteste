@@ -149,3 +149,22 @@ if (document.getElementById('calendario-dias')) {
     mostrarDevocionalDoDia(selecionado);
     mostrarUltimosDevocionais(selecionado);
 }
+
+// caixinha suspensa quando clica em "login"
+document.querySelectorAll('a[href="login.html"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (!window.location.pathname.endsWith('login.html')) {
+            e.preventDefault();
+            document.getElementById('login-popup').style.display = 'block';
+        }
+    });
+});
+
+document.addEventListener('click', function(e) {
+    const popup = document.getElementById('login-popup');
+    if (popup && popup.style.display === 'block') {
+        if (!popup.contains(e.target) && !e.target.closest('a[href="login.html"]')) {
+            popup.style.display = 'none';
+        }
+    }
+});
