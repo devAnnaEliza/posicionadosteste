@@ -164,21 +164,20 @@ nav ul li a:hover {
 }
 
 nav ul li a#abrir-login {
-    color: #f3caa8;
-    font-family: 'Playfair Display', serif;
+    color: #ffffff;
     font-weight: 700;
     background: none;
     border-radius: 8px;
-    padding: 4px 12px;
     transition: color 0.2s, background 0.2s;
     display: flex;
     align-items: center;
     gap: 6px;
 }
+
 nav ul li a#abrir-login:hover {
-    color: #3f1710;
-    background: #ffe1bf;
+    color: #f3caa8;
 }
+
 nav ul li a#abrir-login ion-icon {
     font-size: 1.2em;
     color: inherit;
@@ -801,11 +800,10 @@ nav ul li a#abrir-login ion-icon {
 }
 
 .login-form h3 {
-    font-family: 'Playfair Display', serif;
     color: #ffffff;
     margin-top: 1px;
     margin-bottom: 18px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: center;
     letter-spacing: 1px;
 }
