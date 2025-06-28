@@ -151,20 +151,24 @@ if (document.getElementById('calendario-dias')) {
 }
 
 // caixinha suspensa quando clica em "login"
-document.querySelectorAll('a[href="login.html"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-        if (!window.location.pathname.endsWith('login.html')) {
-            e.preventDefault();
-            document.getElementById('login-popup').style.display = 'block';
-        }
-    });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const loginLink = document.getElementById('abrir-login');
+    const loginPopup = document.getElementById('login-popup');
 
-document.addEventListener('click', function(e) {
-    const popup = document.getElementById('login-popup');
-    if (popup && popup.style.display === 'block') {
-        if (!popup.contains(e.target) && !e.target.closest('a[href="login.html"]')) {
-            popup.style.display = 'none';
-        }
+    if (loginLink && loginPopup) {
+        loginLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            loginPopup.style.display = 'block';
+        });
+
+        document.addEventListener('click', function(event) {
+            if (
+                loginPopup.style.display === 'block' &&
+                !loginPopup.contains(event.target) &&
+                event.target !== loginLink
+            ) {
+                loginPopup.style.display = 'none';
+            }
+        });
     }
 });
