@@ -89,6 +89,8 @@ header h1 {
     transform: scale(1.1);
     color: #f3caa8;
 }
+
+
 /*                                           css global                                          */
 
 
@@ -136,15 +138,18 @@ nav {
     justify-content: space-between;
     padding: 0 20px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     font-family: 'Montserrat', Arial, sans-serif;
     color: white;
@@ -153,22 +158,49 @@ nav ul li a {
     font-weight: bold;
     transition: color 0.3s;
 }
+
 nav ul li a:hover {
     color: #f3caa8; 
 }
+
+nav ul li a#abrir-login {
+    color: #f3caa8;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    background: none;
+    border-radius: 8px;
+    padding: 4px 12px;
+    transition: color 0.2s, background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+nav ul li a#abrir-login:hover {
+    color: #3f1710;
+    background: #ffe1bf;
+}
+nav ul li a#abrir-login ion-icon {
+    font-size: 1.2em;
+    color: inherit;
+    margin-right: 4px;
+}
+
 .hero {
     padding: 100px 20px;
     text-align: center;
 }
+
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
+
 .hero p {
     font-size: 16px;
     margin: 0 auto;
     max-width: 600px;
 }
+
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -179,9 +211,11 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: background 0.3s;
 }
+
 .btn:hover {
     background: #555;
 }
+
 /*                                      estilização do index.html                                         */
 
 
@@ -748,58 +782,81 @@ nav ul li a:hover {
 .login-popup {
     display: none;
     position: absolute;
-    top: 60px;
-    right: 40px;
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 4px 24px rgba(63,23,16,0.13);
-    padding: 28px 24px 18px 24px;
+    top: 44px;
+    right: 65px;
+    background: #3f1710;
+    border-radius: 5px;
+    box-shadow: 0 6px 32px rgba(63,23,16,0.13);
+    height: 220px;
+    width: 300px;
+    padding: 32px 28px 20px 28px;
     z-index: 9999;
-    min-width: 260px;
-    border: 2px solid #f3caa8;
+    min-width: 250px;
+    border: 1px solid #f3caa8;
 }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
 .login-form h3 {
     font-family: 'Playfair Display', serif;
-    color: #3f1710;
-    margin-bottom: 16px;
-    font-size: 1.3rem;
+    color: #ffffff;
+    margin-top: 1px;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
     text-align: center;
+    letter-spacing: 1px;
 }
+
 .login-form input {
     width: 100%;
-    padding: 8px 10px;
-    margin-bottom: 12px;
-    border: 1px solid #f3caa8;
+    padding: 5px 0px;
+    margin-bottom: 14px;
+    border: 1.5px solid #f3caa8;
     border-radius: 8px;
     font-size: 1rem;
     font-family: 'Montserrat', Arial, sans-serif;
+    background: #ffe1bf;
+    color: #3f1710;
+    transition: border 0.2s;
 }
+
+.login-form input:focus {
+    border: 1.5px solid #3f1710;
+    outline: none;
+}
+
 .login-form button {
     width: 100%;
     background: #f3caa8;
     color: #3f1710;
     border: none;
     border-radius: 8px;
-    padding: 8px 0;
-    font-size: 1rem;
+    padding: 5px 2px;
+    font-size: 1.08rem;
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
 }
-.login-form button:hover {
-    background: #3f1710;
-    color: #ffe1bf;
-}
+
 .cadastre-link {
     text-align: center;
-    margin-top: 10px;
-    font-size: 0.95rem;
+    margin-top: 12px;
+    font-size: 1rem;
+    color: #ffffff;
 }
+
 .cadastre-link a {
-    color: #3f1710;
+    color: #ffffff;
     text-decoration: underline;
     font-weight: bold;
+    transition: color 0.2s;
+}
+
+.cadastre-link a:hover {
+    color: #f3caa8;
 }
 
 /*                                            estilização pop up                                                   */
