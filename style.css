@@ -859,7 +859,100 @@ nav ul li a#abrir-login ion-icon {
 
 /*                                            estilização pop up                                                  */
 /*                                            estilização cadastro.html                                           */
+.cadastro-main {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #fff6e6 60%, #ffe1bf 100%);
+}
 
+.cadastro-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(63,23,16,0.13);
+    border-left: 6px solid #f3caa8;
+    border-bottom: 3px solid #3f1710;
+    padding: 40px 32px 32px 32px;
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cadastro-card h1 {
+    font-family: 'Playfair Display', serif;
+    color: #3f1710;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="tel"],
+.cadastro-form input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1.5px solid #f3caa8;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #ffe1bf;
+    color: #3f1710;
+    transition: border 0.2s;
+}
+.cadastro-form input:focus {
+    border: 1.5px solid #3f1710;
+    outline: none;
+}
+
+.cadastro-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #3f1710;
+    margin-bottom: 18px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: left;
+}
+
+.cadastro-form button {
+    width: 100%;
+    background: #f3caa8;
+    color: #3f1710;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1.08rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 4px;
+}
+.cadastro-form button:hover {
+    background: #3f1710;
+    color: #ffe1bf;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1rem;
+    color: #3f1710;
+}
+.login-link a {
+    color: #3f1710;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.login-link a:hover {
+    color: #f3caa8;
+}
 /*                                            estilização cadastro.html                                           */
 /*                                                  media queries                                                 */
 @media (max-width: 768px) {
