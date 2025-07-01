@@ -1013,7 +1013,7 @@ nav ul li a#abrir-login ion-icon {
 
 @media (max-width: 600px) {
     .cadastro-card {
-        padding: 24px 8px 20px 8px;
+        padding: 18px 4px 14px 4px;
         max-width: 98vw;
     }
 }
