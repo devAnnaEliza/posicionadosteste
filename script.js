@@ -172,3 +172,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.hash === "#login") {
+        const loginPopup = document.getElementById('login-popup');
+        if (loginPopup) loginPopup.style.display = 'block';
+    }
+});
