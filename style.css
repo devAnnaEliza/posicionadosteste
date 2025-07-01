@@ -923,6 +923,16 @@ nav ul li a#abrir-login ion-icon {
     color: #ffe1bf;
 }
 
+.cadastro-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #3f1710;
+    margin-bottom: 18px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-align: left;
+}
 .login-link {
     text-align: center;
     margin-top: 16px;
