@@ -1112,3 +1112,23 @@ nav ul li a#abrir-login ion-icon {
     .modal-prev { left: 8px; }
     .modal-next { right: 8px; }
 }
+
+@media (max-width: 600px) {
+    .cadastro-card, .login-card, .sobre-nos-card, .galeria-card {
+        width: 98vw;
+        min-width: unset;
+        padding: 12px 4vw;
+    }
+    .top-menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .hero-banner {
+        min-height: 40vh;
+        padding: 20px 0;
+    }
+}
