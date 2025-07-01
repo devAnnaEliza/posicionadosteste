@@ -877,6 +877,13 @@ nav ul li a#abrir-login ion-icon {
     position: relative;
 }
 
+.cadastro-main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cadastro-card h1 {
     font-family: 'Playfair Display', serif;
     color: #3f1710;
@@ -891,7 +898,7 @@ nav ul li a#abrir-login ion-icon {
 .cadastro-form input[type="tel"],
 .cadastro-form input[type="password"] {
     width: 100%;
-    padding: 10px 12px;
+    padding: 10px 1px;
     margin-bottom: 14px;
     border: 1.5px solid #f3caa8;
     border-radius: 8px;
