@@ -227,3 +227,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// menu hamburguer
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('menu-hamburguer');
+    const menu = document.querySelector('.top-menu');
+    if (btn && menu) {
+        btn.addEventListener('click', function() {
+            menu.classList.toggle('menu-aberto');
+        });
+        document.addEventListener('click', function(e) {
+            if (!btn.contains(e.target) && !menu.contains(e.target)) {
+                menu.classList.remove('menu-aberto');
+            }
+        });
+    }
+});
