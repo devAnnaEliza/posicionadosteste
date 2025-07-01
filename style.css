@@ -307,6 +307,7 @@ nav ul li a#abrir-login ion-icon {
     max-width: 1000px;
     margin: 80px auto 40px auto;
     padding: 20px;
+    font-family: 'Playfair display', 'Arial', sans-serif;
 }
 
 .devocionais-calendario-layout {
