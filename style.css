@@ -90,6 +90,11 @@ header h1 {
     color: #f3caa8;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /*                                           css global                                          */
 
