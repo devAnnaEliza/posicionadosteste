@@ -179,3 +179,51 @@ document.addEventListener('DOMContentLoaded', function() {
         if (loginPopup) loginPopup.style.display = 'block';
     }
 });
+
+// abre/fecha modal na galeria
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.galeria-img');
+    const modal = document.getElementById('galeria-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn = document.getElementById('modal-close');
+    const prevBtn = document.getElementById('modal-prev');
+    const nextBtn = document.getElementById('modal-next');
+    let currentIndex = 0;
+
+    if (images.length && modal) {
+        function openModal(index) {
+            currentIndex = index;
+            modalImg.src = images[index].src;
+            modal.classList.add('active');
+        }
+        function closeModal() {
+            modal.classList.remove('active');
+            modalImg.src = '';
+        }
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            modalImg.src = images[currentIndex].src;
+        }
+        function showNext() {
+            currentIndex = (currentIndex + 1) % images.length;
+            modalImg.src = images[currentIndex].src;
+        }
+
+        images.forEach((img, idx) => {
+            img.addEventListener('click', () => openModal(idx));
+        });
+        closeBtn.addEventListener('click', closeModal);
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (!modal.classList.contains('active')) return;
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+    }
+});
