@@ -28,6 +28,7 @@ body {
     overflow-y: scroll;
 }
 header {
+    display: flex;
     background: #3f1710; 
     color: #f3caa8;
     padding: 10px 20px;
