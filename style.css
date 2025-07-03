@@ -875,9 +875,17 @@ nav ul li a#abrir-login ion-icon {
 
 @media (max-width: 480px) {
     .login-popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
         width: 95vw;
         min-width: unset;
+        max-width: 360px;
         padding: 20px 4vw 16px 4vw;
+        height: auto;
+        box-sizing: border-box;
     }
 }
 
