@@ -1032,7 +1032,7 @@ nav ul li a#abrir-login ion-icon {
 }
 /*                                            estilização cadastro.html                                           */
 
-/*                                            estilização menu mobile                                             
+/*                                            estilização menu mobile                                             */
 .menu-hamburguer {
     display: none;
     flex-direction: column;
@@ -1086,7 +1086,7 @@ nav ul li a#abrir-login ion-icon {
     nav {
         position: relative;
     }
-}*/
+}
 /*                                            estilização menu mobile                                             */
 
 /*                                                  media queries                                                 */
