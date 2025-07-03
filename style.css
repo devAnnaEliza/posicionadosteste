@@ -873,6 +873,14 @@ nav ul li a#abrir-login ion-icon {
     to { opacity: 1; transform: translateY(0);}
 }
 
+@media (max-width: 480px) {
+    .login-popup {
+        width: 95vw;
+        min-width: unset;
+        padding: 20px 4vw 16px 4vw;
+    }
+}
+
 .login-form h3 {
     color: #ffffff;
     margin-top: 1px;
