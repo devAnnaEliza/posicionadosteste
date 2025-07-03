@@ -1075,7 +1075,7 @@ nav ul li a#abrir-login ion-icon {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 10px;
+        right: 24px;
         background: #3f1710;
         border-radius: 12px;
         box-shadow: 0 4px 24px rgba(63,23,16,0.13);
