@@ -45,7 +45,7 @@ nav {
     justify-content: space-between;
     width: 100%;
 }
-.top-menu, .login-menu {
+.top-menu {
     display: flex;
     align-items: center;
     margin: 0;
