@@ -44,11 +44,15 @@ nav {
     align-items: center;
     justify-content: flex-end;
 }
-.top-menu {
+.top-menu, .login-menu {
     display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+.login-menu {
+    margin-left: auto;
 }
 .logo {
     height: 40px;
