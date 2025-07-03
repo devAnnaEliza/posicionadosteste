@@ -173,6 +173,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function abrirLoginPopup() {
+    const loginPopup = document.getElementById('login-popup');
+    if (loginPopup) loginPopup.style.display = 'block';
+
+    const menu = document.querySelector('.top-menu');
+    if (menu && menu.classList.contains('menu-aberto')) {
+        menu.classList.remove('menu-aberto');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const abrirLogin = document.getElementById('abrir-login');
+    if (abrirLogin) {
+        abrirLogin.addEventListener('click', function(e) {
+            e.preventDefault();
+            abrirLoginPopup();
+        });
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.hash === "#login") {
         const loginPopup = document.getElementById('login-popup');
