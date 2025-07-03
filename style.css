@@ -264,7 +264,7 @@ nav ul li a#abrir-login ion-icon {
     border-top: 4px solid #f3caa8;
     border-bottom: 2px solid #3f1710;
     padding: 15px;
-    max-width: 300px;
+    max-width: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -1122,8 +1122,9 @@ nav ul li a#abrir-login ion-icon {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     body {
+        padding-top: 70px;
         padding: 0 5px;
     }
     .hero-content {
@@ -1176,8 +1177,8 @@ nav ul li a#abrir-login ion-icon {
         gap: 8px;
     }
     .galeria-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
     .hero-banner {
         min-height: 40vh;
