@@ -27,7 +27,7 @@ body {
     overflow: auto;
     overflow-y: scroll;
 }
-header {
+header, .top-bar {
     display: flex;
     background: #3f1710; 
     color: #f3caa8;
@@ -38,6 +38,17 @@ header {
     z-index: 1000;
     align-items: center;
     justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.top-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .logo {
     height: 40px;
@@ -137,12 +148,7 @@ img {
     color: #fff;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
+
 
 nav ul {
     list-style: none;
