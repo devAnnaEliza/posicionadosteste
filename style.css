@@ -1032,7 +1032,7 @@ nav ul li a#abrir-login ion-icon {
 }
 /*                                            estilização cadastro.html                                           */
 
-/*                                            estilização menu mobile                                             */
+/*                                            estilização menu mobile                                             
 .menu-hamburguer {
     display: none;
     flex-direction: column;
@@ -1086,11 +1086,11 @@ nav ul li a#abrir-login ion-icon {
     nav {
         position: relative;
     }
-}
+}*/
 /*                                            estilização menu mobile                                             */
 
 /*                                                  media queries                                                 */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .top-bar nav {
         flex-direction: column;
         align-items: flex-start;
@@ -1136,7 +1136,7 @@ nav ul li a#abrir-login ion-icon {
     .hero-content {
         padding: 10px;
     }
-}
+}*/
 
 @keyframes pulse {
     0% {
@@ -1149,7 +1149,7 @@ nav ul li a#abrir-login ion-icon {
         transform: scale(1);
     }
 }
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .hero {
         padding: 80px 15px;
     }
@@ -1190,4 +1190,4 @@ nav ul li a#abrir-login ion-icon {
         min-height: 40vh;
         padding: 20px 0;
     }
-}
+}*/
