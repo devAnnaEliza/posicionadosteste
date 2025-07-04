@@ -61,6 +61,10 @@ O site foi projetado para funcionar perfeitamente em computadores, tablets e cel
 4. Push para a branch (`git push origin minha-feature`)
 5. Abra um Pull Request
 
+## 💻 Visualização
+
+Para visualizá-lo acesse: https://devannaeliza.github.io/posicionadosteste/ 
+
 ## 📢 Observações
 
 - Este projeto é apenas o frontend. O cadastro/login ainda não salva dados em banco de dados.
